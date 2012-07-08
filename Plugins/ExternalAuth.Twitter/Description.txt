@@ -1,0 +1,8 @@
+﻿Group: ExternalAuth methods
+FriendlyName: Twitter
+SystemName: ExternalAuth.Twitter
+Version: 1.12
+SupportedVersions: 2.60
+Author: nopCommerce team
+DisplayOrder: 10
+FileName: Nop.Plugin.ExternalAuth.Twitter.dll

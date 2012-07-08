@@ -1,0 +1,37 @@
+﻿@model ProductDetailsModel.ProductVariantModel.AddToCartModel
+@using Nop.Web.Models.Catalog;
+@using Nop.Web.Framework;
+@using Nop.Core.Domain.Orders;
+<div class="add-info">
+    @if (Model.CustomerEntersPrice)
+    {
+        @Html.LabelFor(model => model.CustomerEnteredPrice, new { @class = "enter-price-label" })<text>:</text>
+        //round price
+        @Html.TextBox("CustomerEnteredPrice", Convert.ToInt32(Math.Ceiling(Model.CustomerEnteredPrice)), new { @class = "enter-price-input" })
+        <br />
+        @Model.CustomerEnteredPriceRange
+        <br />
+    }
+    @if (!Model.DisableBuyButton || !Model.DisableWishlistButton)
+    {
+        @Html.LabelFor(model => model.EnteredQuantity, new { @class = "qty-label" })<text>:</text> 
+        if (Model.AllowedQuantities.Count > 0)
+        {
+            @Html.DropDownListFor(model => model.EnteredQuantity, Model.AllowedQuantities, new { @class = "qty-dropdown" })
+        }
+        else
+        {
+            @Html.TextBoxFor(model => model.EnteredQuantity, new { @class = "qty-input" })
+        }
+    }
+    @if (!Model.DisableBuyButton)
+    {
+        <input type="submit" name="addtocartbutton-@(Model.ProductVariantId)" class="productvariantaddtocartbutton" value="@(Model.AvailableForPreOrder ? T("ShoppingCart.PreOrder") : T("ShoppingCart.AddToCart"))" onclick="AjaxCart.addproductvarianttocart('@Url.RouteUrl("AddProductVariantToCart", new { productVariantId = Model.ProductVariantId, shoppingCartTypeId = (int)ShoppingCartType.ShoppingCart })', '#product-details-form');return false;" />
+    }
+
+    @if (!Model.DisableWishlistButton)
+    {
+        <input type="submit" name="addtowishlistbutton-@(Model.ProductVariantId)" class="productvariantaddtowishlistbutton" value="@T("ShoppingCart.AddToWishlist")" onclick="AjaxCart.addproductvarianttocart('@Url.RouteUrl("AddProductVariantToCart", new { productVariantId = Model.ProductVariantId, shoppingCartTypeId = (int)ShoppingCartType.Wishlist })', '#product-details-form');return false;" />
+    }
+    @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "productdetails_add_info" })
+</div>
