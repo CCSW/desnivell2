@@ -139,7 +139,7 @@ td.fieldname{font-size:12px;}
 .productlistproductdetailbutton,.productgridproductdetailbutton{margin-bottom:3px;}
 .searchbutton,.contactusbutton,.newsitemaddcommentbutton,.blogpostaddcommentbutton,.productvariantaddtocartbutton,.productwritereviewbutton,.loginbutton,.registerbutton,.checkoutasguestbutton,.savecustomerinfobutton,.addaddressbutton,.changepasswordbutton,.registernextstepbutton,.completeregistrationbutton,.passwordrecoverybutton,.newpasswordbutton,.saveaddressbutton,.sendemailafriendbutton,.checkoutbutton,.selectshippingaddressbutton,.newaddressnextstepbutton,.selectbillingaddressbutton,.sameasshippingaddressbutton,.shippingmethodnextstepbutton,.paymentmethodnextstepbutton,.paymentinfonextstepbutton,.confirmordernextstepbutton,.submitforumtopicbutton,.submitpmbutton,.replypmbutton,.deleteselectedpmbutton,.reorderbutton,.minicartcheckoutbutton,.newsletterbox-subscribebutton,.useragreementbutton,.deleteselectedfsbutton,.submitreturnrequestbutton,.uploadavatarbutton,.checkavailabilitybutton{}
 .productemailafriendbutton,.productaddtocomparelistbutton,.editaddressbutton,.deleteaddressbutton,.cancelrecurringorderbutton,.orderdetailsbutton,.returnitemsbutton,.orderdetailsprintbutton,.estimateshippingbutton,.updatewishlistbutton,.applycouponcodebutton,.updatecartbutton,.continueshoppingbutton,.orderprocessedcontinuebutton,.submitpollvotebutton,.cancelforumtopicbutton,.forumsearchbutton,.forumsearchboxbutton,.cancelpmbutton,.deletepmbutton,.backpmbutton,.removeavatarbutton{}
-.productlistaddtocartbutton,.productgridaddtocartbutton{}
+.productlistaddtocartbutton,.productgridaddtocartbutton{padding:5px 10px;}
 .productvariantaddtowishlistbutton{}
 ul.languagelist{display:inline;line-height:25px;}
 ul.languagelist li{list-style:none;display:inline;padding:0 5px;}
@@ -351,10 +351,10 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-grid .product-item .product-title a{display:block;height:2em;line-height:1.3em;overflow:hidden;padding:4px 10px 8px 0;color:#2166A2;font-weight:bold}
 .product-grid .product-item .picture{text-align:center;margin-top:10px;width:140px;/*height:180px*/}
 .product-grid .product-item .description{margin:5px 5px 0;text-align:center;padding:10px 5px;border-top:solid 1px #E8E6D2;color:#555;height:50px;display:none;}
-.product-grid .product-item .add-info{margin-left:15px}
-.product-grid .product-item .add-info .prices{margin-right:10px;text-align:left;float:left;clear:both}
-.product-grid .product-item .add-info .buttons{float:left;position:relative;text-align:right;}
-.product-grid .product-item .add-info .prices .productPrice{color:#137C13;font-size:16px;font-weight:bold;}
+.product-grid .product-item .add-info{display:table;}
+.product-grid .product-item .add-info .prices{text-align:left;float:left}
+.product-grid .product-item .add-info .buttons{position:relative;text-align:center;}
+.product-grid .product-item .add-info .prices .productPrice{color:#137C13;font-size:1.75em;}
 .product-grid .product-item .add-info .prices .oldproductPrice{color:Red;text-decoration:line-through;}
 .product-grid .item-box{padding-bottom:10px;text-align:center;vertical-align:text-top;}
 .product-grid .small-product-item{text-align:center;margin:10px;width:150px;height:150px;}
