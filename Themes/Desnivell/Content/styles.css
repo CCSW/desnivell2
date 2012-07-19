@@ -137,9 +137,20 @@ td.fieldname{font-size:12px;}
 .postlink{padding:1px 3px;margin-right:5px;border:none;}
 .searchboxbutton{background-color:#9C6;border:solid 1px #355317;color:#FFF;font-size:1.1em;font-weight:bold;height:27px;margin-left: -1px;padding: 0px 15px;}
 .productlistproductdetailbutton,.productgridproductdetailbutton{margin-bottom:3px;}
-.searchbutton,.contactusbutton,.newsitemaddcommentbutton,.blogpostaddcommentbutton,.productvariantaddtocartbutton,.productwritereviewbutton,.loginbutton,.registerbutton,.checkoutasguestbutton,.savecustomerinfobutton,.addaddressbutton,.changepasswordbutton,.registernextstepbutton,.completeregistrationbutton,.passwordrecoverybutton,.newpasswordbutton,.saveaddressbutton,.sendemailafriendbutton,.checkoutbutton,.selectshippingaddressbutton,.newaddressnextstepbutton,.selectbillingaddressbutton,.sameasshippingaddressbutton,.shippingmethodnextstepbutton,.paymentmethodnextstepbutton,.paymentinfonextstepbutton,.confirmordernextstepbutton,.submitforumtopicbutton,.submitpmbutton,.replypmbutton,.deleteselectedpmbutton,.reorderbutton,.minicartcheckoutbutton,.newsletterbox-subscribebutton,.useragreementbutton,.deleteselectedfsbutton,.submitreturnrequestbutton,.uploadavatarbutton,.checkavailabilitybutton{}
-.productemailafriendbutton,.productaddtocomparelistbutton,.editaddressbutton,.deleteaddressbutton,.cancelrecurringorderbutton,.orderdetailsbutton,.returnitemsbutton,.orderdetailsprintbutton,.estimateshippingbutton,.updatewishlistbutton,.applycouponcodebutton,.updatecartbutton,.continueshoppingbutton,.orderprocessedcontinuebutton,.submitpollvotebutton,.cancelforumtopicbutton,.forumsearchbutton,.forumsearchboxbutton,.cancelpmbutton,.deletepmbutton,.backpmbutton,.removeavatarbutton{}
-.productlistaddtocartbutton,.productgridaddtocartbutton{
+
+.searchbutton,.contactusbutton,.newsitemaddcommentbutton,.blogpostaddcommentbutton,.productvariantaddtocartbutton,.productwritereviewbutton,
+.loginbutton,.registerbutton,.checkoutasguestbutton,.savecustomerinfobutton,.addaddressbutton,.changepasswordbutton,.registernextstepbutton,
+.completeregistrationbutton,.passwordrecoverybutton,.newpasswordbutton,.saveaddressbutton,.sendemailafriendbutton,.checkoutbutton,
+.selectshippingaddressbutton,.newaddressnextstepbutton,.selectbillingaddressbutton,.sameasshippingaddressbutton,
+.shippingmethodnextstepbutton,.paymentmethodnextstepbutton,.paymentinfonextstepbutton,.confirmordernextstepbutton,
+.submitforumtopicbutton,.submitpmbutton,.replypmbutton,.deleteselectedpmbutton,.reorderbutton,.minicartcheckoutbutton,
+.newsletterbox-subscribebutton,.useragreementbutton,.deleteselectedfsbutton,.submitreturnrequestbutton,.uploadavatarbutton,
+.checkavailabilitybutton,.productlistaddtocartbutton,.productgridaddtocartbutton,.productvariantaddtowishlistbutton,
+.productemailafriendbutton,.productaddtocomparelistbutton,.editaddressbutton,.deleteaddressbutton,.cancelrecurringorderbutton,
+.orderdetailsbutton,.returnitemsbutton,.orderdetailsprintbutton,.estimateshippingbutton,.updatewishlistbutton,.applycouponcodebutton,
+.updatecartbutton,.continueshoppingbutton,.orderprocessedcontinuebutton,.submitpollvotebutton,.cancelforumtopicbutton,.forumsearchbutton,
+.forumsearchboxbutton,.cancelpmbutton,.deletepmbutton,.backpmbutton,.removeavatarbutton
+{
     background: #99cc66; /* Old browsers */
     background: -moz-linear-gradient(top,  #99cc66 1%, #75b239 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#99cc66), color-stop(100%,#75b239)); /* Chrome,Safari4+ */
@@ -149,8 +160,16 @@ td.fieldname{font-size:12px;}
     background: linear-gradient(to bottom,  #99cc66 1%,#75b239 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc66', endColorstr='#75b239',GradientType=0 ); /* IE6-9 */
 
-    border:solid 1px #355317;border-radius:3px;box-shadow:1px 1px 2px #888;color:white;font-size:1.1em;font-weight:bold;margin:1px 0px 0px 1px;padding:5px 10px;}
-.productlistaddtocartbutton:hover,.productgridaddtocartbutton:hover
+    border:solid 1px #355317;border-radius:3px;box-shadow:1px 1px 2px #888;color:white;font-size:1.1em;font-weight:bold;margin:1px 0px 0px 1px;padding:5px 10px;
+    
+    }
+
+.minicartcheckoutbutton:hover,.productvariantaddtowishlistbutton:hover,.productlistaddtocartbutton:hover,.productgridaddtocartbutton:hover,
+.productemailafriendbutton:hover,.productaddtocomparelistbutton:hover,.editaddressbutton:hover,.deleteaddressbutton:hover,
+.cancelrecurringorderbutton:hover,.orderdetailsbutton:hover,.returnitemsbutton:hover,.orderdetailsprintbutton:hover,
+.estimateshippingbutton:hover,.updatewishlistbutton:hover,.applycouponcodebutton:hover,.updatecartbutton:hover,.continueshoppingbutton:hover,
+.orderprocessedcontinuebutton:hover,.submitpollvotebutton:hover,.cancelforumtopicbutton:hover,.forumsearchbutton:hover,
+.forumsearchboxbutton:hover,.cancelpmbutton:hover,.deletepmbutton:hover,.backpmbutton:hover,.removeavatarbutton:hover
 {
     background: #a7d877; /* Old browsers */
     background: -moz-linear-gradient(top,  #a7d877 0%, #82bc47 100%); /* FF3.6+ */
@@ -162,7 +181,7 @@ td.fieldname{font-size:12px;}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7d877', endColorstr='#82bc47',GradientType=0 ); /* IE6-9 */
 
     box-shadow:2px 2px 2px #888;color:white;margin:0px 1px 1px 0px;}
-.productvariantaddtowishlistbutton{}
+
 ul.languagelist{display:inline;line-height:25px;}
 ul.languagelist li{list-style:none;display:inline;padding:0 5px;}
 ul.languagelist li .selected{border:solid 1px #ccc!important;}
