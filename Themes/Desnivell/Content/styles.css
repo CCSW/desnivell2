@@ -152,16 +152,23 @@ td.fieldname{font-size:12px;}
 .forumsearchboxbutton,.cancelpmbutton,.deletepmbutton,.backpmbutton,.removeavatarbutton
 {
     
-    background: #99cc66; /* Old browsers */
-    background: -moz-linear-gradient(top,  #99cc66 1%, #75b239 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#99cc66), color-stop(100%,#75b239)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #99cc66 1%,#75b239 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #99cc66 1%,#75b239 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #99cc66 1%,#75b239 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #99cc66 1%,#75b239 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc66', endColorstr='#75b239',GradientType=0 ); /* IE6-9 */
+background: rgb(120,178,62); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(120,178,62,1) 0%, rgba(75,127,19,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(120,178,62,1)), color-stop(100%,rgba(75,127,19,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(120,178,62,1) 0%,rgba(75,127,19,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(120,178,62,1) 0%,rgba(75,127,19,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(120,178,62,1) 0%,rgba(75,127,19,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(120,178,62,1) 0%,rgba(75,127,19,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78b23e', endColorstr='#4b7f13',GradientType=0 ); /* IE6-9 */
 
-    border:solid 1px #355317;border-radius:3px;box-shadow:1px 1px 2px #888;color:white;font-size:1.1em;font-weight:bold;margin:1px 2px 0px 3px;padding:5px 10px;
+    border:none;
+    border-radius:3px;
+    box-shadow:0px 5px 1px #195000;
+    color:white;
+    font-size:1.1em;
+    font-weight:bold;
+    margin:0px 2px 5px 2px;
+    padding:5px 10px;
     
     }
 
@@ -176,18 +183,49 @@ td.fieldname{font-size:12px;}
 .productemailafriendbutton:hover,.productaddtocomparelistbutton:hover,.editaddressbutton:hover,.deleteaddressbutton:hover,.cancelrecurringorderbutton:hover,
 .orderdetailsbutton:hover,.returnitemsbutton:hover,.orderdetailsprintbutton:hover,.estimateshippingbutton:hover,.updatewishlistbutton:hover,.applycouponcodebutton:hover,
 .updatecartbutton:hover,.continueshoppingbutton:hover,.orderprocessedcontinuebutton:hover,.submitpollvotebutton:hover,.cancelforumtopicbutton:hover,.forumsearchbutton:hover,
-.forumsearchboxbutton:hover,.cancelpmbutton:hover,.deletepmbutton:hover,.backpmbutton:hover,.removeavatarbutton
+.forumsearchboxbutton:hover,.cancelpmbutton:hover,.deletepmbutton:hover,.backpmbutton:hover,.removeavatarbutton:hover
 {
-    background: #a7d877; /* Old browsers */
-    background: -moz-linear-gradient(top,  #a7d877 0%, #82bc47 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a7d877), color-stop(100%,#82bc47)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #a7d877 0%,#82bc47 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #a7d877 0%,#82bc47 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #a7d877 0%,#82bc47 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #a7d877 0%,#82bc47 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7d877', endColorstr='#82bc47',GradientType=0 ); /* IE6-9 */
+    background: #99cc66; /* Old browsers */
+    background: -moz-linear-gradient(top,  #99cc66 1%, #75b239 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#99cc66), color-stop(100%,#75b239)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #99cc66 1%,#75b239 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #99cc66 1%,#75b239 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #99cc66 1%,#75b239 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #99cc66 1%,#75b239 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc66', endColorstr='#75b239',GradientType=0 ); /* IE6-9 */
+    box-shadow:0px 5px 1px #267700;
+}
+.old{
+    background: rgb(204,224,89); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(204,224,89,1) 0%, rgba(185,214,23,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,224,89,1)), color-stop(100%,rgba(185,214,23,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(204,224,89,1) 0%,rgba(185,214,23,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(204,224,89,1) 0%,rgba(185,214,23,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(204,224,89,1) 0%,rgba(185,214,23,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(204,224,89,1) 0%,rgba(185,214,23,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce059', endColorstr='#b9d617',GradientType=0 ); /* IE6-9 */
+    box-shadow:0px 5px 1px #267700;
+}
 
-    box-shadow:2px 2px 2px #888;color:white;margin:0px 3px 1px 2px;}
+.searchbutton:active,.contactusbutton:active,.newsitemaddcommentbutton:active,.blogpostaddcommentbutton:active,.productvariantaddtocartbutton:active,.productwritereviewbutton:active,
+.loginbutton:active,.registerbutton:active,.checkoutasguestbutton:active,.savecustomerinfobutton:active,.addaddressbutton:active,.changepasswordbutton:active,.registernextstepbutton:active,
+.completeregistrationbutton:active,.passwordrecoverybutton:active,.newpasswordbutton:active,.saveaddressbutton:active,.sendemailafriendbutton:active,.checkoutbutton:active,
+.selectshippingaddressbutton:active,.newaddressnextstepbutton:active,.selectbillingaddressbutton:active,.sameasshippingaddressbutton:active,
+.shippingmethodnextstepbutton:active,.paymentmethodnextstepbutton:active,.paymentinfonextstepbutton:active,.confirmordernextstepbutton:active,
+.submitforumtopicbutton:active,.submitpmbutton:active,.replypmbutton:active,.deleteselectedpmbutton:active,.reorderbutton:active,.minicartcheckoutbutton:active,
+.newsletterbox-subscribebutton:active,.useragreementbutton:active,.deleteselectedfsbutton:active,.submitreturnrequestbutton:active,.uploadavatarbutton:active,
+.checkavailabilitybutton:active,.productlistaddtocartbutton:active,.productgridaddtocartbutton:active,.productvariantaddtowishlistbutton:active,
+.productemailafriendbutton:active,.productaddtocomparelistbutton:active,.editaddressbutton:active,.deleteaddressbutton:active,.cancelrecurringorderbutton:active,
+.orderdetailsbutton:active,.returnitemsbutton:active,.orderdetailsprintbutton:active,.estimateshippingbutton:active,.updatewishlistbutton:active,.applycouponcodebutton:active,
+.updatecartbutton:active,.continueshoppingbutton:active,.orderprocessedcontinuebutton:active,.submitpollvotebutton:active,.cancelforumtopicbutton:active,.forumsearchbutton:active,
+.forumsearchboxbutton:active,.cancelpmbutton:active,.deletepmbutton:active,.backpmbutton:active,.removeavatarbutton:active
+{
+    box-shadow:0px 2px 1px #267700;
+    color:white;
+    margin:0px 2px 5px 2px;
+    position:relative;
+    top:3px;
+    }
 
 ul.languagelist{display:inline;line-height:25px;}
 ul.languagelist li{list-style:none;display:inline;padding:0 5px;}
@@ -674,7 +712,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-details-info{}
 .product-details-info .picture{float:left;width:300px;margin-top:25px;margin-bottom:15px;}
 .product-details-info .picture .picturethumbs{margin-top:10px;}
-.product-details-info .overview{float:right;width:400px;margin-right:15px;padding:5px}
+.product-details-info .overview{float:right;width:435px;margin-right:5px;padding:5px}
 .product-details-info .overview .productname{color:#3664A5;font-size:20px;margin-bottom:0.5em;}
 .product-details-info .overview .shortdescription,.product-details-info .overview .manufacturers,.product-details-info .overview .sku,.product-details-info .overview .manufacturerpartnumber,.product-details-info .overview .stock,.product-details-info .overview .gtin{color:#555;margin-bottom:.3em;font-size:1.1em;}
 .backinstocksubscription{margin-top:10px;margin-bottom:10px;}
@@ -706,18 +744,18 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-review-helpfulness .vote{color:#3664A5;font-weight:700;text-decoration:none;}
 .product-review-helpfulness .vote:hover{cursor:pointer;text-decoration:none;}
 .product-variant-list{margin-bottom:15px;padding:0;}
-.product-variant-line{clear:both;margin-bottom:20px;padding-bottom:20px;margin-top:10px;border-bottom:dashed 1px #C4C6C8;}
+.product-variant-line{clear:both;display:table;margin-top:10px;border-bottom:dashed 1px #C4C6C8;}
 .product-variant-line .picture{float:left;width:300px;margin-bottom:15px;}
 .product-variant-line .overview{display:none;float:right;width:200px;margin-right:25px;}
 .product-variant-line .overview .productname{color:#3664A5;font-size:1.2em;margin-bottom:.3em;}
 .product-variant-line .description{clear:both;color:#555;margin-bottom:.3em;}
 .product-details-page .downloadsample{clear:both;color:#555;margin-top:15px;margin-bottom:15px;}
 .product-details-page .downloadsample .downloadsamplebutton{-x-system-font:none!important;background:#F1F1F1 url(images/btn_download_bg.gif) repeat-x scroll 0 100%;border:1px solid #B5B5B5;color:#444;cursor:pointer;font-family:arial,sans-serif!important;font-size:11px!important;font-size-adjust:none!important;font-stretch:normal!important;font-style:normal!important;font-variant:normal!important;font-weight:700!important;line-height:normal!important;overflow:visible;padding:1px 5px;text-align:center;text-transform:uppercase;vertical-align:middle;width:auto;}
-.product-variant-line .price{float:left;font-size:2.25em;padding:10px;margin-right:30px;text-shadow: 1px 1px 2px #BBB;}
-.product-essential .price{margin-top:5px;margin-bottom:5px;}
+.product-variant-line .price{float:left;font-size:1em;text-shadow: 1px 1px 2px #BBB;}
+.product-essential .price{background:#F7F5E8;height:20px;padding:4px 5px;text-align:right;width:60px;}
 .product-variant-line .price .productPrice,.product-essential .price .productPrice{color:green;}
 .product-variant-line .price .oldProductPrice,.product-essential .price .oldProductPrice{color:red;text-decoration:line-through;}
-.product-variant-line .add-info{padding:15px;background:#F7F5E8;min-height:17px;}
+.product-variant-line .add-info{padding:4px;background:#F7F5E8;float:left;height:20px;}
 .product-variant-line .add-info .enter-price-input,.product-essential .add-info .enter-price-input{width:60px;}
 .product-variant-line .add-info .qty-input,.product-essential .add-info .qty-input{width:40px;}
 .product-variant-line .attributes{}
@@ -996,10 +1034,21 @@ pre{white-space:pre-wrap;/* css-3 */white-space:0;/* Mozilla, since 1999 */white
 .csharpcode .attr{color:red;}
 .csharpcode .alt{background-color:#f4f4f4;width:100%;margin:0;}
 .csharpcode .lnum{color:#606060;}
-.addToCartButtons{display:table;text-align:center;width:100%}
-.qty{text-align:right;}
-.qty-label{color:#444;font-size:2.25em;text-shadow:1px 1px 2px #999;}
-.qty-input{border:solid 1px #444;box-shadow:1px 1px 2px #AAA inset;color:#666;font-size:2.25em;text-align:right;}
+.addToCartButtons{float:left;margin:0px 2px}
+.qty{float:left;margin: 0px 2px;}
+.qty-label{color:#444;font-size:1em;text-shadow:1px 1px 2px #999;}
+.qty-input{border:solid 1px #444;box-shadow:1px 1px 2px #AAA inset;color:#666;font-size:1em;text-align:right;}
+.productvariantaddtocartbutton,.productvariantaddtowishlistbutton
+{
+    box-shadow: 0px 3px 1px #195000;
+    font-size:0.85em;
+    font-weight:normal;
+    padding:2px;
+ }
+ .productvariantaddtocartbutton:hover,.productvariantaddtowishlistbutton:hover
+    {box-shadow: 0px 3px 1px #267700;}
+.productvariantaddtocartbutton:active,.productvariantaddtowishlistbutton:active
+    {box-shadow: 0px 1px 1px #267700;top:2px;}
 /*CMAS*/
 .InfoBlock_title{float:left;margin-right:5px;text-align:center}
 .InfoBlock_datos{border-left: 1px dashed #3A4045;color:#3A4045;float:left;font-size:12px;}
