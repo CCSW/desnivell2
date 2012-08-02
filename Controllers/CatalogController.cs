@@ -1905,6 +1905,13 @@ namespace Nop.Web.Controllers
         }
 
         [ChildActionOnly]
+        //[OutputCache(Duration = 120, VaryByCustom = "WorkingLanguage")]
+        public ActionResult ProductManufacturersOnProductsGrid(int productId)
+        {
+            return ProductManufacturers(productId);
+        }
+
+        [ChildActionOnly]
         public ActionResult ProductReviewOverview(int productId)
         {
             var product = _productService.GetProductById(productId);
@@ -1919,6 +1926,12 @@ namespace Nop.Web.Controllers
                 AllowCustomerReviews = product.AllowCustomerReviews
             };
             return PartialView(model);
+        }
+
+        [ChildActionOnly]
+        public ActionResult ProductReviewOverviewOnProductsGrid(int productId)
+        {
+            return ProductReviewOverview(productId);
         }
 
         [ChildActionOnly]
@@ -2103,8 +2116,8 @@ namespace Nop.Web.Controllers
             return new RssActionResult() { Feed = feed };
         }
 
-        [ChildActionOnly]
-        public ActionResult HomepageBestSellers(int? productThumbPictureSize)
+        //[ChildActionOnly]
+        public ActionResult HomePageBestSellers(int? productThumbPictureSize)
         {
             if (!_catalogSettings.ShowBestsellersOnHomepage || _catalogSettings.NumberOfBestsellersOnHomepage == 0)
                 return Content("");
