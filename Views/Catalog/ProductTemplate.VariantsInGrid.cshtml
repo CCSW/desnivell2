@@ -40,7 +40,7 @@
                     </h1>
                     <iframe src="http://www.facebook.com/plugins/like.php?href=httpF%2%3A%2Fwww.bicicletasdesnivell.com/producto/"+@Model.Id+"/"+@Model.SeName+"/;
     send=false&amp;layout=standard&amp;width=1800&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" 
-    scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:1800px; height:35px;" allowTransparency="true"></iframe>
+    scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:35px;" allowTransparency="true"></iframe>
                     <br />
                     <div class="shortdescription">
                         @Html.Raw(Model.ShortDescription)
@@ -68,9 +68,11 @@
                     <div class="clear">
                     </div>
                     <br />
+                    <div class="overviewextrabuttons">
                     @Html.Action("ProductEmailAFriendButton", "Catalog", new { productId = Model.Id })
                     &nbsp;
                     @Html.Action("CompareProductsButton", "Catalog", new { productId = Model.Id })                                                          
+                    </div>
                     <div class="clear">
                     </div>
                     @Html.Action("ShareButton", "Catalog")
