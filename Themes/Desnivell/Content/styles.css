@@ -48,7 +48,7 @@ a.logo{background:url(images/logoDesnivell6p.png);display:block;width:187px;heig
 .header-languageselector{float:right;display:none}
 .header-taxDisplayTypeSelector{float:right;}
 .header-links-wrapper{/*text-align:right;width:670px;*/}
-.header-links{padding:5px;margin-left:10%;margin-bottom:5px;display:inline-table;}
+.header-links{display:inline-table;float:left;margin-left:0%;margin-bottom:5px;padding:5px;}
 .header-links ul{padding:0;margin:0;}
 .header-links ul li{list-style:none;display:inline;padding-right:2px;}
 .header-links a{color:#BCD;text-decoration:none;}

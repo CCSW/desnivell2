@@ -1,11 +1,13 @@
 ﻿@{
     Layout = "~/Views/Shared/_ColumnsThree.cshtml";
 }
+@*
 @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "home_page_top" })
 @Html.Action("TopicBlock", "Topic", new { systemName = "HomePageText" })
+*@
 <div class="clear">
 </div>
-@*@Html.Action("TopicBlock", "Topic", new {systemName = "NivoSlider"})*@
+@Html.Action("TopicBlock", "Topic", new {systemName = "NivoSlider"})
 <div class="clear">
 </div>
 @Html.Action("HomepageCategories", "Catalog")
