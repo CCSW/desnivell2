@@ -82,6 +82,7 @@ a.logo{background:url(images/logoDesnivell6p.png);display:block;width:187px;heig
 .page-title{border-bottom:1px solid;margin:0 0 10px;overflow:hidden;width:100%;}
 .page-title h1,.page-title h2{padding:5px 5px 5px 0;font-size:20px;margin:0;font-family:Arial,Helvetica,sans-serif;font-weight:400;}
 td{vertical-align:middle;}
+.product-grid td{vertical-align:top;}
 td.fieldname{font-size:12px;}
 .table-container{}
 .table-container .row{}
@@ -435,7 +436,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-grid .product-item{text-align:center;width:263px}
 .product-grid .product-item .product-title{font-weight:700;font-size:12px;float:left;text-align:left;width:250px;position:relative}
 .product-grid .product-item .product-title a{display:block;height:2em;line-height:1.3em;overflow:hidden;padding:4px 10px 8px 0;color:#2166A2;font-weight:bold}
-.product-grid .product-item .picture{text-align:center;margin-top:10px;width:140px;/*height:180px*/}
+.product-grid .product-item .picture{height:180px;text-align:center;margin-top:10px;width:100%;}
 .product-grid .product-item .description{margin:5px 5px 0;text-align:center;padding:10px 5px;border-top:solid 1px #E8E6D2;color:#555;height:50px;display:none;}
 .product-grid .product-item .add-info{display:table;}
 .product-grid .product-item .add-info .prices{text-align:left;float:left}
@@ -711,7 +712,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-details-info{}
 .product-details-info .picture{float:left;width:300px;margin-top:25px;margin-bottom:15px;}
 .product-details-info .picture .picturethumbs{margin-top:10px;}
-.product-details-info .overview{float:right;width:435px;margin-right:5px;padding:5px}
+.product-details-info .overview{float:right;width:450px;}
 .product-details-info .overview .productname{color:#3664A5;font-size:20px;margin-bottom:0.5em;}
 .product-details-info .overview .shortdescription,.product-details-info .overview .manufacturers,.product-details-info .overview .sku,.product-details-info .overview .manufacturerpartnumber,.product-details-info .overview .stock,.product-details-info .overview .gtin{color:#555;margin-bottom:.3em;font-size:1.1em;}
 .backinstocksubscription{margin-top:10px;margin-bottom:10px;}
@@ -1067,6 +1068,7 @@ a:hover{text-decoration:underline}
 .followus{float:right;margin-top:16px}
 .followus_title{text-align:left;font-size:11px;}
 .followus_item{float:left;margin-right:10px}
+.overviewextrabuttons{display:block;text-align:center;width:100%}
 /*.slider-wrapper-Desnivell{width:600px;height:auto;position:absolute}*/
 .nivoSlider{background:url(images/loading.gif) no-repeat 50% 50%;height:315px;position:relative;}
 .nivoSlider img {display:none;left:0px;position:relative;top:0px;}
