@@ -168,7 +168,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78b23e', end
     font-size:1.1em;
     font-weight:bold;
     margin:0px 2px 5px 2px;
-    padding:5px 10px;
+    /*padding:5px 10px;*/
     
     }
 
@@ -431,7 +431,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .bestsellers .title{padding:10px 0 1px;margin:0 5px 10px;font-weight:700;text-transform:uppercase;clear:both;font-size:1.1em;border-bottom:solid 1px #C4C6C8;text-align:center;}
 /* PRODUCTS IN GRID - TEMPLATE */
 .product-grid{margin-bottom:15px;margin-left:auto;margin-right:auto;/*width:790px;*/text-align:center}
-.product-grid .item-box{padding-bottom:10px;text-align:center;vertical-align:text-top;}
+.product-grid .item-box{padding-bottom:10px;text-align:center;vertical-align:text-top}
 .product-grid .product-item{text-align:center;width:263px}
 .product-grid .product-item .product-title{font-weight:700;font-size:12px;float:left;text-align:left;width:250px;position:relative}
 .product-grid .product-item .product-title a{display:block;height:2em;line-height:1.3em;overflow:hidden;padding:4px 10px 8px 0;color:#2166A2;font-weight:bold}
@@ -440,9 +440,8 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-grid .product-item .add-info{display:table;}
 .product-grid .product-item .add-info .prices{text-align:left;float:left}
 .product-grid .product-item .add-info .buttons{position:relative;text-align:center;}
-.product-grid .product-item .add-info .prices .productPrice{color:#137C13;font-size:1.75em;}
+.product-grid .product-item .add-info .prices .productPrice{color:#137C13/*;font-size:1.75em;*/}
 .product-grid .product-item .add-info .prices .oldproductPrice{color:Red;text-decoration:line-through;}
-.product-grid .item-box{padding-bottom:10px;text-align:center;vertical-align:text-top;}
 .product-grid .small-product-item{text-align:center;margin:10px;width:150px;height:150px;}
 .product-grid .small-product-item .product-title{margin-bottom:5px;margin-top:5px;text-align:center;font-weight:700;font-size:12px;}
 .product-grid .small-product-item .picture{text-align:center;}
