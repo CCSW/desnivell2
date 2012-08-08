@@ -61,6 +61,14 @@
     @if (Model.SubCategories.Count > 0)
     {
         <div class="sub-category-grid">
+            <ul>
+            @for (int i=0; i < Model.SubCategories.Count; i++)
+            {
+                var item = Model.SubCategories[i];
+                <li class="category-item"><a href="@Url.RouteUrl("Category", new { categoryId = item.Id, SeName = item.SeName })" title="@item.PictureModel.Title">
+                                @item.Name</a></li>
+            }
+            @*
             @(Html.DataList<CategoryModel.SubCategoryModel>(Model.SubCategories, 3,
                 @<div class="item-box">
                     <div class="sub-category-item">
@@ -76,6 +84,8 @@
                     </div>
                 </div>
             ))
+            *@
+            </ul>
         </div>
         <div class="clear">
         </div>
@@ -142,9 +152,11 @@
         Model.PagingFilteringContext.SpecificationFilter.Enabled)
     {
         <div class="product-filters">
+        @* - CARLOSG -
             <div class="filter-title">
                 <span>@T("Filtering.FilterResults")</span>
             </div>
+        *@
             @if (Model.PagingFilteringContext.PriceRangeFilter.Enabled)
             {
             <div class="filter-item">
