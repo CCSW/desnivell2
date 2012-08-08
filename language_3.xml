@@ -8703,11 +8703,23 @@
 	<LocaleResource Name="Enums.Nop.Core.Domain.Catalog.ProductSortingEnum.Name">
 		<Value>Nombre </Value>
 	</LocaleResource>
+	<LocaleResource Name="Enums.Nop.Core.Domain.Catalog.ProductSortingEnum.NameAsc">
+		<Value>Nombre Asc</Value>
+	</LocaleResource>
+	<LocaleResource Name="Enums.Nop.Core.Domain.Catalog.ProductSortingEnum.NameDesc">
+		<Value>Nombre Desc</Value>
+	</LocaleResource>
 	<LocaleResource Name="Enums.Nop.Core.Domain.Catalog.ProductSortingEnum.Position">
 		<Value>Posición </Value>
 	</LocaleResource>
 	<LocaleResource Name="Enums.Nop.Core.Domain.Catalog.ProductSortingEnum.Price">
 		<Value>Precio </Value>
+	</LocaleResource>
+	<LocaleResource Name="Enums.Nop.Core.Domain.Catalog.ProductSortingEnum.PriceAsc">
+		<Value>Precio Asc</Value>
+	</LocaleResource>
+	<LocaleResource Name="Enums.Nop.Core.Domain.Catalog.ProductSortingEnum.PriceDesc">
+		<Value>Precio Desc</Value>
 	</LocaleResource>
 	<LocaleResource Name="Enums.Nop.Core.Domain.Catalog.RecurringProductCyclePeriod.Days">
 		<Value>Days </Value>
