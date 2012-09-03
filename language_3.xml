@@ -985,7 +985,7 @@
 		<Value>Exentos de impuestos </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.IsTaxExempt.Hint">
-		<Value>Determina si esta opción está exenta de impuestos (impuesto no se aplicará a esta opción en la caja). </Value>
+		<Value>Determina si esta opción está exenta de impuestos (impuesto no se aplicará a esta opción en la compra). </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.Name">
 		<Value>Nombre </Value>
@@ -2098,7 +2098,7 @@
 		<Value>Exentos de impuestos </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Catalog.Products.Variants.Fields.IsTaxExempt.Hint">
-		<Value>Determina si este producto está exento de impuestos (impuesto no se aplicará a este producto en la caja). </Value>
+		<Value>Determina si este producto está exento de impuestos (impuesto no se aplicará a este producto en la compra). </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Catalog.Products.Variants.Fields.Length">
 		<Value>Longitud </Value>
@@ -4345,7 +4345,7 @@
 		<Value>Anónimo pago permitido </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Configuration.Settings.Order.AnonymousCheckoutAllowed.Hint">
-		<Value>Marcar para habilitar anónimos caja (los clientes no están obligados a conectar / registrarse en la compra de productos) </Value>
+		<Value>Marcar para habilitar compras anónimas (los clientes no están obligados a conectar / registrarse en la compra de productos) </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Configuration.Settings.Order.GiftCards_Activated">
 		<Value>La tarjeta de regalo de activación para el estado </Value>
@@ -8326,7 +8326,7 @@
 		<Value>Lista </Value>
 	</LocaleResource>
 	<LocaleResource Name="Checkout">
-		<Value>Caja </Value>
+		<Value>Comprar </Value>
 	</LocaleResource>
 	<LocaleResource Name="Checkout.BillingAddress">
 		<Value>Dirección de facturación </Value>
@@ -11425,7 +11425,7 @@
 		<Value>Cesta de la compra </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.AddToCart">
-		<Value>Comprar </Value>
+		<Value>A la cesta </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.AddToWishlist">
 		<Value>Añadir a lista de deseos</Value>
@@ -11461,19 +11461,19 @@
 		<Value>Código de Descuento </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.Applied">
-		<Value>The coupon code was applied </Value>
+		<Value>El descuento fue aplicado </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.Button">
-		<Value>Aplicar cupón </Value>
+		<Value>Aplicar descuento </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.CurrentCode">
-		<Value>Entered coupon code - {0} </Value>
+		<Value>Descuento introducido - {0} </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.Tooltip">
-		<Value>Ingrese su cupón aquí </Value>
+		<Value>Introduzca su descuento aquí </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.WrongDiscount">
-		<Value>The coupon code you entered couldn't be applied to your order </Value>
+		<Value>El descuento introducido no se puede aplicar al pedido </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.EstimateShipping">
 		<Value>Gastos de envío  </Value>
@@ -11503,7 +11503,7 @@
 		<Value>El cupón ha sido aplicado</Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.GiftCardCouponCode.Button">
-		<Value>Añadir cupón</Value>
+		<Value>Aplicar cupón</Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.GiftCardCouponCode.DontWorkWithAutoshipProducts">
 		<Value>You cannot use gift cards with auto-ship (recurring) items. </Value>
