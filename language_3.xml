@@ -223,13 +223,13 @@
 		<Value>Ciudad</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.City.Required">
-		<Value>City is required</Value>
+		<Value>Se requiere ciudad</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.Company">
 		<Value>Empresa</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.Company.Required">
-		<Value>Company name is required</Value>
+		<Value>Se requiere nombre de empresa</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.ConfirmPassword">
 		<Value>Confirme su contraseña</Value>
@@ -253,7 +253,7 @@
 		<Value>Fax</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.Fax.Required">
-		<Value>Fax is required</Value>
+		<Value>Se requiere fax</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.FirstName">
 		<Value>Nombre</Value>
@@ -295,7 +295,7 @@
 		<Value>Teléfono</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.Phone.Required">
-		<Value>Phone is required</Value>
+		<Value>Se requiere el teléfono</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.Signature">
 		<Value>Firma</Value>
@@ -307,13 +307,13 @@
 		<Value>Dirección</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.StreetAddress.Required">
-		<Value>Street address is required</Value>
+		<Value>Se requiere dirección</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.StreetAddress2">
 		<Value>Dirección (alternativa)</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.StreetAddress2.Required">
-		<Value>Street address 2 is required</Value>
+		<Value>Se requiere la dirección alternativa</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.Fields.Timezone">
 		<Value>Huso horario</Value>
@@ -346,7 +346,7 @@
 		<Value>Eliminar seleccionados</Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.ForumSubscriptions.Description">
-		<Value>Usted recibirá un e-mail cuando un tema nuevo foro / post se crea. </Value>
+		<Value>Recibirá un e-mail cuando un tema nuevo foro / post sea creado. </Value>
 	</LocaleResource>
 	<LocaleResource Name="Account.ForumSubscriptions.InfoColumn">
 		<Value>Foro / Tema </Value>
@@ -985,7 +985,7 @@
 		<Value>Exentos de impuestos </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.IsTaxExempt.Hint">
-		<Value>Determina si esta opción está exenta de impuestos (impuesto no se aplicará a esta opción en la caja). </Value>
+		<Value>Determina si esta opción está exenta de impuestos (impuesto no se aplicará a esta opción en la compra). </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.Name">
 		<Value>Nombre </Value>
@@ -2098,7 +2098,7 @@
 		<Value>Exentos de impuestos </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Catalog.Products.Variants.Fields.IsTaxExempt.Hint">
-		<Value>Determina si este producto está exento de impuestos (impuesto no se aplicará a este producto en la caja). </Value>
+		<Value>Determina si este producto está exento de impuestos (impuesto no se aplicará a este producto en la compra). </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Catalog.Products.Variants.Fields.Length">
 		<Value>Longitud </Value>
@@ -4345,7 +4345,7 @@
 		<Value>Anónimo pago permitido </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Configuration.Settings.Order.AnonymousCheckoutAllowed.Hint">
-		<Value>Marcar para habilitar anónimos caja (los clientes no están obligados a conectar / registrarse en la compra de productos) </Value>
+		<Value>Marcar para habilitar compras anónimas (los clientes no están obligados a conectar / registrarse en la compra de productos) </Value>
 	</LocaleResource>
 	<LocaleResource Name="Admin.Configuration.Settings.Order.GiftCards_Activated">
 		<Value>La tarjeta de regalo de activación para el estado </Value>
@@ -8326,7 +8326,7 @@
 		<Value>Lista </Value>
 	</LocaleResource>
 	<LocaleResource Name="Checkout">
-		<Value>Caja </Value>
+		<Value>Comprar </Value>
 	</LocaleResource>
 	<LocaleResource Name="Checkout.BillingAddress">
 		<Value>Dirección de facturación </Value>
@@ -9667,7 +9667,7 @@
 		<Value>Blog</Value>
 	</LocaleResource>
 	<LocaleResource Name="PageTitle.Checkout">
-		<Value>Caja </Value>
+		<Value>Terminar Pedido</Value>
 	</LocaleResource>
 	<LocaleResource Name="PageTitle.CompareProducts">
 		<Value>Comparar productos </Value>
@@ -11425,7 +11425,7 @@
 		<Value>Cesta de la compra </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.AddToCart">
-		<Value>Comprar </Value>
+		<Value>A la cesta </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.AddToWishlist">
 		<Value>Añadir a lista de deseos</Value>
@@ -11461,19 +11461,19 @@
 		<Value>Código de Descuento </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.Applied">
-		<Value>The coupon code was applied </Value>
+		<Value>El descuento fue aplicado </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.Button">
-		<Value>Aplicar cupón </Value>
+		<Value>Aplicar descuento </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.CurrentCode">
-		<Value>Entered coupon code - {0} </Value>
+		<Value>Descuento introducido - {0} </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.Tooltip">
-		<Value>Ingrese su cupón aquí </Value>
+		<Value>Introduzca su descuento aquí </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.DiscountCouponCode.WrongDiscount">
-		<Value>The coupon code you entered couldn't be applied to your order </Value>
+		<Value>El descuento introducido no se puede aplicar al pedido </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.EstimateShipping">
 		<Value>Gastos de envío  </Value>
@@ -11494,31 +11494,31 @@
 		<Value>Código Postal </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.FileUploaded">
-		<Value>Your file successfully uploaded!</Value>
+		<Value>Fichero subido correctamente</Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.GiftCardCouponCode">
-		<Value>Tarjetas de regalo </Value>
+		<Value>Tarjetas de regalo</Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.GiftCardCouponCode.Applied">
-		<Value>The gift card code was applied </Value>
+		<Value>El cupón ha sido aplicado</Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.GiftCardCouponCode.Button">
-		<Value>Add gift card </Value>
+		<Value>Aplicar cupón</Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.GiftCardCouponCode.DontWorkWithAutoshipProducts">
 		<Value>You cannot use gift cards with auto-ship (recurring) items. </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.GiftCardCouponCode.Tooltip">
-		<Value>Enter gift card code </Value>
+		<Value>Introduzca el cupón </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.GiftCardCouponCode.WrongGiftCard">
-		<Value>The coupon code you entered couldn't be applied to your order </Value>
+		<Value>El cupón que ha introducido no se puede aplicar a su pedido </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.ItemTotal">
 		<Value>Total </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.ItemYouSave">
-		<Value>You save </Value>
+		<Value>Ahorra </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.MaximumQuantity">
 		<Value>La cantidad máxima permitida para la compra es de {0}. </Value>
@@ -11536,7 +11536,7 @@
 		<Value>Hay {0} en su cesta. </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.Mini.Quantity">
-		<Value>Quantity</Value>
+		<Value>Cantidad</Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.Mini.Severalartículos">
 		<Value>{0} artículos </Value>
@@ -11551,10 +11551,10 @@
 		<Value>Tienes {0} en la cesta de la compra. </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.Mini.UnitPrice">
-		<Value>Unit price</Value>
+		<Value>Precio unitario</Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.Mini.ViewCart">
-		<Value>Go to cart</Value>
+		<Value>Ir al carro </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.MinimumQuantity">
 		<Value>La cantidad mínima permitida para la compra es de {0}. </Value>
@@ -11584,7 +11584,7 @@
 		<Value>Enter valid recipient email </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.RecipientNameError">
-		<Value>Introduzca el nombre del destinatario válido </Value>
+		<Value>Introduzca un nombre de destinatario válido </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.RecurringPeriod">
 		<Value>[Auto-buque, todas las {0} {1}] </Value>
@@ -11602,7 +11602,7 @@
 		<Value>Enter valid sender email </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.SenderNameError">
-		<Value>Introduzca el nombre del remitente válida </Value>
+		<Value>Introduzca un nombre remitente válido </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.SKU">
 		<Value>SKU </Value>
@@ -11656,7 +11656,7 @@
 		<Value>Actualización de la Cantidad </Value>
 	</LocaleResource>
 	<LocaleResource Name="ShoppingCart.WishlistDisabled">
-		<Value>Wishlist is disabled for this product </Value>
+		<Value>Lista de deseos está deshablitada para este producto </Value>
 	</LocaleResource>
 	<LocaleResource Name="Sitemap">
 		<Value>Mapa del sitio </Value>
