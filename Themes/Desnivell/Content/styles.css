@@ -1064,11 +1064,11 @@ pre{white-space:pre-wrap;/* css-3 */white-space:0;/* Mozilla, since 1999 */white
 .InfoBlock_datos{border-left: 1px dashed #3A4045;color:#3A4045;float:left;font-size:12px;}
 .InfoBlock_datos ul{padding-left:5px;}
 .InfoBlock_datos a{color:#3A4045;font-size:12px;}
-.InfoBlock_foot_left{float:left;margin-left:110px;width:250px;text-align:left}
-.InfoBlock_foot_right{float:left;text-align:left}
+.InfoBlock_foot_left{float:left;margin-left:160px;width:17%;text-align:left}
+.InfoBlock_foot_right{float:left;text-align:left;width:17%;}
 .infoFooter, .infoFooter .block-info{display:table;float:left;}
 .infoFooter{width:100%}
-.infoFooter .block-info{margin-left:5%}
+.infoFooter .block-info{margin-left:5%;width:90%}
 .footer a.logo{background:url(images/logoDesnivell6.png);display:block;width:284px;height:91px;text-decoration:none;}
 .changedevice{clear:both;text-align:right;}
 .Categorytitle{margin:5px 0px}
@@ -1083,4 +1083,8 @@ a:hover{text-decoration:underline}
 .nivoSlider{background:url(images/loading.gif) no-repeat 50% 50%;height:315px;position:relative;}
 .nivoSlider img {display:none;left:0px;position:relative;top:0px;}
 .nivoSlider a {border:0;display:block;}
+.logos_pay{float:left;text-align:left;width:22%;}
+.logos_pay li{display:inline}
+.followus_footer{float:left;text-align:left;width:20%;}
+.followus_footer li{display:inline}
 /*FIN CMAS*/

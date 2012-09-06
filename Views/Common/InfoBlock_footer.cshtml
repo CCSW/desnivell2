@@ -28,7 +28,7 @@
     
     <div class="InfoBlock_foot_right">
          <ul>
-            <li><strong>Comprar</strong></li>
+            <li><strong>@T("Shopping")</strong></li>
            @* @if (Model.CompareProductsEnabled)
             {
                 <li><a href="@Url.RouteUrl("CompareProducts")">@T("Products.Compare.List")</a></li>            
@@ -41,5 +41,27 @@
             <li><a href="@Url.RouteUrl("Topic", new { SystemName = "privacyinfo" })">@T("PrivacyNotice")</a></li>
             <li><a href="@Url.RouteUrl("Topic", new { SystemName = "conditionsofUse" })">@T("ConditionsOfUse")</a></li>
         </ul>
-    </div>        
+    </div>      
+    <div class="logos_pay">           
+            <ul>
+                <li style="float:left"><strong>@T("Payments")</strong></li><br />
+                <li><img src="../../Themes/Desnivell/Content/images/paypal.png" /></li>
+                <li><img src="../../Themes/Desnivell/Content/images/visa.png" /></li>
+                <li><img src="../../Themes/Desnivell/Content/images/mastercard.png" /></li>                
+            </ul>
+    </div>
+    <div class="followus_footer">
+         <ul>
+            <li><strong>@T("FollowUs")</strong></li><br />
+             <li>
+                <a href="http://wwww.bicicletasdesnivell.com"><img src="../../Content/Images/icons/icon-facebook.png" /></a>
+             </li>
+             <li>
+                <a href="http://wwww.bicicletasdesnivell.com""><img src="../../Content/Images/icons/icon-twitter.png" /></a>
+             </li>
+             <li>
+                <a href="http://wwww.bicicletasdesnivell.com""><img src="../../Content/Images/icons/icon-youtube.png" /></a>
+             </li>  
+         </ul>       
+</div>      
 </div>
