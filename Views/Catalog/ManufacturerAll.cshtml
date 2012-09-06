@@ -1,10 +1,4 @@
 ﻿@model IList<ManufacturerModel>
-@*@{
-    Layout = "~/Views/Shared/_ColumnsThree.cshtml";
-
-    //title
-    Html.AddTitleParts(T("PageTitle.Manufacturers").Text);
-}*@
 @using Nop.Core;
 @using Nop.Core.Infrastructure;
 @using Nop.Web.Framework.UI;
@@ -15,7 +9,7 @@
     </div>
     <div class="clear">
     </div>
-    <div class="manufacturer-grid">
+   @* <div class="manufacturer-grid">
         @if (Model.Count > 0)
         {
             @(Html.DataList<ManufacturerModel>(Model, 3,
@@ -32,4 +26,33 @@
                 ))
         }
     </div>
+</div>*@
+@{    
+    //resources
+    Html.AppendCssFileParts(@Url.Content("~/Themes/Desnivell/Content/skin.css"));
+    Html.AppendScriptParts(@Url.Content("~/Scripts/jquery-1.7.1.min.js"));
+    Html.AppendScriptParts(@Url.Content("~/Scripts/jquery.jcarousel.min.js"));    
+}
+<script type="text/javascript">
+   jQuery(document).ready(function () {
+        jQuery('#mycarousel').jcarousel({
+            wrap: 'circular'
+        });
+    });
+</script>
+<div id="wrap">
+    @if (Model.Count > 0)
+    {
+        <ul id="mycarousel" class="jcarousel-skin-tango">
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@Url.RouteUrl("Manufacturer", new { manufacturerId = item.Id, SeName = item.SeName })" title="@item.PictureModel.Title">
+                   <img width="125" height="75" alt="@item.PictureModel.AlternateText" src="@item.PictureModel.ImageUrl" title="@item.PictureModel.Title"/>
+                </a>
+            </li>       
+        }
+        </ul>
+    }
+</div>
 </div>

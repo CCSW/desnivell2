@@ -2116,8 +2116,8 @@ namespace Nop.Web.Controllers
             return new RssActionResult() { Feed = feed };
         }
 
-        //[ChildActionOnly]
-        public ActionResult HomePageBestSellers(int? productThumbPictureSize)
+        [ChildActionOnly]
+        public ActionResult HomepageBestSellers(int? productThumbPictureSize)
         {
             if (!_catalogSettings.ShowBestsellersOnHomepage || _catalogSettings.NumberOfBestsellersOnHomepage == 0)
                 return Content("");

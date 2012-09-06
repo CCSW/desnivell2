@@ -437,7 +437,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-grid .item-box{padding-bottom:10px;text-align:center;vertical-align:text-top}
 .product-grid .product-item{text-align:center;width:263px}
 .product-grid .product-item .product-title{font-weight:700;font-size:12px;float:left;text-align:left;width:250px;position:relative}
-.product-grid .product-item .product-title a{display:block;height:2em;line-height:1.3em;overflow:hidden;padding:4px 10px 8px 0;color:#2166A2;font-weight:bold}
+.product-grid .product-item .product-title a{display:block;/*height:2em;*/line-height:1.3em;overflow:hidden;/*padding:4px 10px 8px 0;*/color:#2166A2;font-weight:bold}
 .product-grid .product-item .picture{height:200px;text-align:center;margin-top:10px;width:100%;}
 .product-grid .product-item .description{margin:5px 5px 0;text-align:center;padding:10px 5px;border-top:solid 1px #E8E6D2;color:#555;height:50px;display:none;}
 .product-grid .product-item .add-info{display:table;}
@@ -717,17 +717,19 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-details-info .overview{float:right;width:450px;}
 .product-details-info .overview .productname{color:#3664A5;font-size:20px;margin-bottom:0.5em;}
 .product-details-info .overview .shortdescription,.product-details-info .overview .manufacturers,.product-details-info .overview .sku,.product-details-info .overview .manufacturerpartnumber,.product-details-info .overview .stock,.product-details-info .overview .gtin{color:#555;margin-bottom:.3em;font-size:1.1em;}
+.manufacturers{color:#555;margin-bottom:.3em;font-size:1.1em;/*margin-top:5px*/}
 .backinstocksubscription{margin-top:10px;margin-bottom:10px;}
 .backinstocksubscription a.subscribebutton{}
 .product-details-info .fulldescription{border-top:1px solid #E8E6D2;clear:both;color:#555;margin-bottom:.3em;}
 .product-share-button{margin-top:10px;margin-bottom:10px;}
-.product-reviews-overview{margin-top:20px;margin-bottom:20px;}
+.product-reviews-overview{margin-top:5px;margin-bottom:5px;}
 .product-reviews-overview .product-review-box{margin-right:5px;width:69px;height:13px;}
 .product-review-box .rating{height:13px;width:55px;background:url(images/star_x_inactive.gif) 0 0 repeat-x;}
 .product-review-box .rating div{height:12px;background:url(images/star_x_active.gif) 0 0 repeat-x;}
 .product-reviews-overview .product-review-links .separator{margin:0 2px;}
 .product-reviews-overview .product-review-links{margin:0;}
 .product-no-reviews{margin-top:20px;margin-bottom:20px;}
+.product-numberReviews{float:right;margin-top:-15px;}
 .product-no-reviews a{}
 .product-reviews-page{}
 .product-reviews-page .page-title{border-bottom:0 none;}
