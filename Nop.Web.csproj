@@ -1268,6 +1268,9 @@
     <Content Include="Scripts\2012.1.214\telerik.upload.min.js" />
     <Content Include="Scripts\2012.1.214\telerik.window.min.js" />
     <Content Include="Scripts\fileuploader.js" />
+    <Content Include="Scripts\jquery.jcarousel.js" />
+    <Content Include="Scripts\jquery.jcarousel.min.js" />
+    <Content Include="Scripts\jquery.nivo.slider.pack.js" />
     <Content Include="Scripts\public.ajaxcart.js" />
     <Content Include="Scripts\public.accordion.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
@@ -1328,8 +1331,12 @@
     <Content Include="Themes\Desnivell\Content\images\logoDesnivell5.png" />
     <Content Include="Themes\Desnivell\Content\images\logoDesnivell6.png" />
     <Content Include="Themes\Desnivell\Content\images\logoDesnivell6p.png" />
+    <Content Include="Themes\Desnivell\Content\images\mastercard.png" />
+    <Content Include="Themes\Desnivell\Content\images\next.gif" />
     <Content Include="Themes\Desnivell\Content\images\nextlabel.gif" />
     <Content Include="Themes\Desnivell\Content\images\orange_button_bg.gif" />
+    <Content Include="Themes\Desnivell\Content\images\paypal.png" />
+    <Content Include="Themes\Desnivell\Content\images\prev.gif" />
     <Content Include="Themes\Desnivell\Content\images\prevlabel.gif" />
     <Content Include="Themes\Desnivell\Content\images\progress-step-active.gif" />
     <Content Include="Themes\Desnivell\Content\images\progress-step-inactive.gif" />
@@ -1340,7 +1347,9 @@
     <Content Include="Themes\Desnivell\Content\images\ship.png" />
     <Content Include="Themes\Desnivell\Content\images\star_x_active.gif" />
     <Content Include="Themes\Desnivell\Content\images\star_x_inactive.gif" />
+    <Content Include="Themes\Desnivell\Content\images\visa.png" />
     <Content Include="Themes\Desnivell\Content\nivo-slider.css" />
+    <Content Include="Themes\Desnivell\Content\skin.css" />
     <Content Include="Themes\Desnivell\Content\styles.css" />
     <Content Include="Themes\Mobile\Content\images\ajax-loader.gif" />
     <Content Include="Themes\Mobile\Content\images\ajax-loader.png" />
