@@ -9,7 +9,8 @@
         </li>
     }
     <li><a href="@Url.RouteUrl("HomePageBestSellers","Catalog")">@T("Bestsellers")</a> </li>
-    <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a> </li>
+    <li><a href="@Url.RouteUrl("ProductsWithDiscount","Catalog")">@T("Sales")</a> </li>
+    @*<li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a> </li>*@
     <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
     @if (Model.BlogEnabled)
     {

@@ -2174,6 +2174,13 @@ namespace Nop.Web.Controllers
             return PartialView(model);
         }
 
+        public ActionResult ProductsWithDiscount()
+        {
+            var model = new List<ProductOverviewModel>();
+            var producsWithdiscount = _productService.GetProductsWithDiscountOrSpecialPrice();
+            model.AddRange(PrepareProductOverviewModels(producsWithdiscount));
+            return View(model);            
+        }
         public ActionResult BackInStockSubscribePopup(int productVariantId)
         {
             var variant = _productService.GetProductVariantById(productVariantId);

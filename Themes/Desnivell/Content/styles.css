@@ -112,7 +112,7 @@ td.fieldname{font-size:12px;}
 .message-error{font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:700;color:red;}
 .validation-summary-errors{font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:700;color:red;}
 .field-validation-error{font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:700;color:red;}
-.copyright{float:right;font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;font-size:10px;margin-right:10px;margin-top:75px;}
+.copyright{float:right;font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;font-size:10px;margin-right:10px;width:95%}
 .copyright a{color:#3664A5;background-color:inherit;}
 /* sitemap */
 .sitemap-page{margin-left:auto;margin-right:auto;width:100%;}
@@ -1074,7 +1074,7 @@ pre{white-space:pre-wrap;/* css-3 */white-space:0;/* Mozilla, since 1999 */white
 .Categorytitle{margin:5px 0px}
 .Categorytitle a{font-weight:bold;color:#666666}
 a:hover{text-decoration:underline}
-.footer-logo{float:left;margin: 0px 0px 0px 40%}
+.footer-logo{float:left;margin: -20px 0px 0px 40%}
 .followus{float:right;margin-top:16px}
 .followus_title{text-align:left;font-size:11px;}
 .followus_item{float:left;margin-right:10px}

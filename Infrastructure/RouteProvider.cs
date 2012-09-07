@@ -672,6 +672,10 @@ namespace Nop.Web.Infrastructure
                             "topic/authenticate",
                             new { controller = "Topic", action = "Authenticate" },
                             new[] { "Nop.Web.Controllers" });
+            routes.MapLocalizedRoute("ProductsWithDiscount",
+                            "sales",
+                            new { controller = "Catalog", action = "ProductsWithDiscount" },
+                            new[] { "Nop.Web.Controllers" });
         }
 
         public int Priority
