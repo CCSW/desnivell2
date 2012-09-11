@@ -45,7 +45,7 @@ input
 a.logo{background:url(images/logoDesnivell6p.png);display:block;width:187px;height:60px;text-decoration:none;}
 .header-selectors-wrapper{text-align:right;float:right;/*width:500px;*/}
 .header-currencyselector{float:right;}
-.header-languageselector{float:right;display:none}
+.header-languageselector{/*float:right;display:none*/}
 .header-taxDisplayTypeSelector{float:right;}
 .header-links-wrapper{/*text-align:right;width:670px;*/}
 .header-links{display:inline-table;float:left;margin-left:0%;margin-bottom:5px;padding:5px;}
@@ -1075,7 +1075,7 @@ pre{white-space:pre-wrap;/* css-3 */white-space:0;/* Mozilla, since 1999 */white
 .Categorytitle a{font-weight:bold;color:#666666}
 a:hover{text-decoration:underline}
 .footer-logo{float:left;margin: -20px 0px 0px 40%}
-.followus{float:right;margin-top:16px}
+.followus{float:right;margin-top:5px}
 .followus_title{text-align:left;font-size:11px;}
 .followus_item{float:left;margin-right:10px}
 .overviewextrabuttons{display:block;text-align:center;width:100%}

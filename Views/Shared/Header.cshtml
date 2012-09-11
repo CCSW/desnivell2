@@ -5,6 +5,9 @@
     <div class="header-links-wrapper">
         @Html.Action("HeaderLinks", "Common")
        @* @Html.Action("FlyoutShoppingCart", "ShoppingCart")*@
+       <div class="header-languageselector">
+            @Html.Action("LanguageSelector", "Common")
+        </div>
         @Html.Action("FollowUs", "Common") 
     </div>
        
@@ -14,10 +17,7 @@
         </div>
         <div class="header-currencyselector">
             @Html.Action("CurrencySelector", "Common")
-        </div>                       
-        <div class="header-languageselector">
-            @Html.Action("LanguageSelector", "Common")
-        </div>
+        </div>                               
         @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "header_selectors" })
     </div>
 </div>
