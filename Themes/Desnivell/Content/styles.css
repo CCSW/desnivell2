@@ -1080,9 +1080,12 @@ a:hover{text-decoration:underline}
 .followus_item{float:left;margin-right:10px}
 .overviewextrabuttons{display:block;text-align:center;width:100%}
 /*.slider-wrapper-Desnivell{width:600px;height:auto;position:absolute}*/
-.nivoSlider{background:url(images/loading.gif) no-repeat 50% 50%;height:315px;position:relative;}
+.nivoSlider{background:url(images/loading.gif) no-repeat 50% 50%;height:221px;position:relative;}
 .nivoSlider img {display:none;left:0px;position:relative;top:0px;}
 .nivoSlider a {border:0;display:block;}
+#slider a{
+    display:block;
+}
 .logos_pay{float:left;text-align:left;width:22%;}
 .logos_pay li{display:inline}
 .followus_footer{float:left;text-align:left;width:20%;}
