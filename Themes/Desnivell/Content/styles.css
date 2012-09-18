@@ -440,7 +440,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-grid .product-item .product-title a{display:block;/*height:2em;*/line-height:1.3em;overflow:hidden;/*padding:4px 10px 8px 0;*/color:#2166A2;font-weight:bold}
 .product-grid .product-item .picture{height:200px;text-align:center;margin-top:10px;width:100%;}
 .product-grid .product-item .description{margin:5px 5px 0;text-align:center;padding:10px 5px;border-top:solid 1px #E8E6D2;color:#555;height:50px;display:none;}
-.product-grid .product-item .add-info{display:table;}
+.product-grid .product-item .add-info{display:table;float:left}
 .product-grid .product-item .add-info .prices{text-align:left;float:left}
 .product-grid .product-item .add-info .buttons{position:relative;text-align:center;}
 .product-grid .product-item .add-info .prices .productPrice{color:#137C13/*;font-size:1.75em;*/}
