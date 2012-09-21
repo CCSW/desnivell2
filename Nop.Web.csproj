@@ -740,7 +740,9 @@
     <Content Include="Content\editors\tinymce\plugins\template\editor_plugin_src.js" />
     <Content Include="Content\editors\tinymce\plugins\template\js\template.js" />
     <Content Include="Content\editors\tinymce\plugins\template\langs\en_dlg.js" />
+    <Content Include="Content\editors\tinymce\plugins\template\ProductDesc.htm" />
     <Content Include="Content\editors\tinymce\plugins\template\template.htm" />
+    <Content Include="Content\editors\tinymce\plugins\template\template_list.js" />
     <Content Include="Content\editors\tinymce\plugins\visualchars\editor_plugin.js" />
     <Content Include="Content\editors\tinymce\plugins\visualchars\editor_plugin_src.js" />
     <Content Include="Content\editors\tinymce\plugins\wordcount\editor_plugin.js" />
