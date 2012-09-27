@@ -422,7 +422,9 @@ ul.languagelist li:hover{cursor:pointer;}
 .opc .step{border:1px solid #bbafa0;border-top:0;background:#fbfaf6 0 0 repeat-x;padding:15px 30px;position:relative;}
 .opc .step-title:after{display:block;content:".";clear:both;font-size:0;line-height:0;height:0;overflow:hidden;}
 /* HOME PAGE */
-.home-page-product-grid{margin-left:auto;margin-right:auto;width:520px;}
+.home-page-product-grid{margin-left:auto;margin-right:auto;width:630px;border:1px solid #CCCCCC;border-radius:7px}
+.home-page-product-grid table{margin-left:55px}
+.home-page-product-grid table tr{border-bottom:1px solid #CCCCCC}
 .home-page-product-grid .title{padding:10px 0 1px;margin:0 5px 10px;font-weight:700;text-transform:uppercase;clear:both;font-size:1.1em;border-bottom:solid 1px #C4C6C8;text-align:center;}
 .home-page-category-grid{margin-left:auto;margin-right:auto;width:520px;}
 .home-page-category-grid a{}
@@ -1080,14 +1082,13 @@ a:hover{text-decoration:underline}
 .followus_item{float:left;margin-right:10px}
 .overviewextrabuttons{display:block;text-align:center;width:100%}
 /*.slider-wrapper-Desnivell{width:600px;height:auto;position:absolute}*/
-.nivoSlider{background:url(images/loading.gif) no-repeat 50% 50%;height:221px;position:relative;}
+.nivoSlider{background:url(images/loading.gif) no-repeat 50% 50%;height:315px;position:relative;}
 .nivoSlider img {display:none;left:0px;position:relative;top:0px;}
 .nivoSlider a {border:0;display:block;}
-#slider a{
-    display:block;
-}
 .logos_pay{float:left;text-align:left;width:22%;}
 .logos_pay li{display:inline}
 .followus_footer{float:left;text-align:left;width:20%;}
 .followus_footer li{display:inline}
+.oauth-login-facebook{width:263px;border:1px solid #E8E6D2;margin-left:11px}
+.oauth-login-facebook legend{font-weight:bold}
 /*FIN CMAS*/
