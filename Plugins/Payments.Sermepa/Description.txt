@@ -1,0 +1,8 @@
+﻿Group: Payment methods
+FriendlyName: Sermepa
+SystemName: Payments.Sermepa
+Version: 1.03
+SupportedVersions: 2.60
+Author: Noel Revuelta, nopCommerce team
+DisplayOrder: 1
+FileName: Nop.Plugin.Payments.Sermepa.dll
