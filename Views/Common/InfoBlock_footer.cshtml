@@ -4,9 +4,9 @@
        
     <div class="InfoBlock_foot_left">                            
         <ul>
-            <li><strong>@T("Information")</strong></li>
-            <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a> </li>
-            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "aboutus" })">@T("AboutUs")</a></li>
+            <li><strong>@T("Information")</strong></li>            
+            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "Contactar" })">@T("ContactUs")</a></li>
+            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "Quienes-somos" })">@T("AboutUs")</a></li>
             @if (Model.BlogEnabled)
             {
                 <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>
@@ -44,7 +44,7 @@
     </div>      
     <div class="logos_pay">           
             <ul>
-                <li style="float:left"><strong>@T("Payments")</strong></li><br />
+                <li style="float:left"><strong>@T("Payments")</strong></li><br /><br />
                 <li><img src="../../Themes/Desnivell/Content/images/paypal.png" /></li>
                 <li><img src="../../Themes/Desnivell/Content/images/visa.png" /></li>
                 <li><img src="../../Themes/Desnivell/Content/images/mastercard.png" /></li>                
@@ -52,7 +52,7 @@
     </div>
     <div class="followus_footer">
          <ul>
-            <li><strong>@T("FollowUs")</strong></li><br />
+            <li><strong>@T("FollowUs")</strong></li><br /><br />
              <li>
                 <a href="http://wwww.bicicletasdesnivell.com"><img src="../../Content/Images/icons/icon-facebook.png" /></a>
              </li>

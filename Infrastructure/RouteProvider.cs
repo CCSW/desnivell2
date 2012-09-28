@@ -35,16 +35,16 @@ namespace Nop.Web.Infrastructure
                             new { controller = "Catalog", action = "RecentlyViewedProducts" },
                             new[] { "Nop.Web.Controllers" });
             routes.MapLocalizedRoute("HomePageBestSellers",
-                            "HomePageBestSellers/",
-                            new { controller = "Catalog", action = "HomePageBestSellers" },
-                            new[] { "Nop.Web.Controllers" });
+                           "topventas/",
+                           new { controller = "Catalog", action = "HomepageBestSellers_Menu" },
+                           new[] { "Nop.Web.Controllers" });            
             
             routes.MapLocalizedRoute("RecentlyAddedProducts",
-                            "newproducts/",
+                            "novedades/",
                             new { controller = "Catalog", action = "RecentlyAddedProducts" },
                             new[] { "Nop.Web.Controllers" });
             routes.MapLocalizedRoute("RecentlyAddedProductsRSS",
-                            "newproducts/rss",
+                            "novedades/rss",
                             new { controller = "Catalog", action = "RecentlyAddedProductsRss" },
                             new[] { "Nop.Web.Controllers" });
             
@@ -593,7 +593,7 @@ namespace Nop.Web.Infrastructure
 
             //topics
             routes.MapLocalizedRoute("Topic",
-                            "t/{SystemName}",
+                            "{SystemName}",
                             new { controller = "Topic", action = "TopicDetails" },
                             new[] { "Nop.Web.Controllers" });
             routes.MapLocalizedRoute("TopicPopup",
@@ -673,7 +673,7 @@ namespace Nop.Web.Infrastructure
                             new { controller = "Topic", action = "Authenticate" },
                             new[] { "Nop.Web.Controllers" });
             routes.MapLocalizedRoute("ProductsWithDiscount",
-                            "sales",
+                            "Ofertas",
                             new { controller = "Catalog", action = "ProductsWithDiscount" },
                             new[] { "Nop.Web.Controllers" });
         }
