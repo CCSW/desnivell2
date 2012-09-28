@@ -425,7 +425,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .home-page-product-grid{margin-left:auto;margin-right:auto;width:630px;border:1px solid #CCCCCC;border-radius:7px}
 .home-page-product-grid table{margin-left:55px}
 .home-page-product-grid table tr{border-bottom:1px solid #CCCCCC}
-.home-page-product-grid .title{padding:10px 0 1px;margin:0 5px 10px;font-weight:700;text-transform:uppercase;clear:both;font-size:1.1em;border-bottom:solid 1px #C4C6C8;text-align:center;}
+.home-page-product-grid .title{padding:10px 0 1px;font-weight:700;text-transform:uppercase;font-size:1.1em;border-bottom:solid 1px #CCCCCC;border-radius:7px 7px 0px 0px;border-right:1px solid #CCCCCC;width:185px;height:25px;background-color:#f5f5f5}
 .home-page-category-grid{margin-left:auto;margin-right:auto;width:520px;}
 .home-page-category-grid a{}
 .home-page-category-grid .item-box{text-align:center;vertical-align:text-top;}
@@ -750,7 +750,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-review-helpfulness .vote{color:#3664A5;font-weight:700;text-decoration:none;}
 .product-review-helpfulness .vote:hover{cursor:pointer;text-decoration:none;}
 .product-variant-list{margin-bottom:15px;padding:0;}
-.product-variant-line{clear:both;display:table;margin-top:10px;border-bottom:dashed 1px #C4C6C8;}
+.product-variant-line{clear:both;display:table;margin-top:10px;border-bottom:dashed 1px #C4C6C8;background-color:#F7F5E8}
 .product-variant-line .picture{float:left;width:300px;margin-bottom:15px;}
 .product-variant-line .overview{display:none;float:right;width:200px;margin-right:25px;}
 .product-variant-line .overview .productname{color:#3664A5;font-size:1.2em;margin-bottom:.3em;}
@@ -758,11 +758,11 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-details-page .downloadsample{clear:both;color:#555;margin-top:15px;margin-bottom:15px;}
 .product-details-page .downloadsample .downloadsamplebutton{-x-system-font:none!important;background:#F1F1F1 url(images/btn_download_bg.gif) repeat-x scroll 0 100%;border:1px solid #B5B5B5;color:#444;cursor:pointer;font-family:arial,sans-serif!important;font-size:11px!important;font-size-adjust:none!important;font-stretch:normal!important;font-style:normal!important;font-variant:normal!important;font-weight:700!important;line-height:normal!important;overflow:visible;padding:1px 5px;text-align:center;text-transform:uppercase;vertical-align:middle;width:auto;}
 .product-variant-line .price{float:left;font-size:1em;text-shadow: 1px 1px 2px #BBB;}
-.product-essential .price{background:#F7F5E8;height:20px;padding:4px 5px;text-align:right;width:60px;}
+.product-essential .price{padding:4px 5px}
 .product-variant-line .price .productPrice,.product-essential .price .productPrice{color:green;}
 .product-variant-line .price .oldProductPrice,.product-essential .price .oldProductPrice{color:red;text-decoration:line-through;}
-.product-variant-line .add-info{padding:4px;background:#F7F5E8;float:left;height:20px;}
-.product-variant-line .add-info .enter-price-input,.product-essential .add-info .enter-price-input{width:60px;}
+.product-variant-line .add-info{padding:4px;float:left}
+.product-variant-line .add-info .enter-price-input,.product-essential .add-info .enter-price-input{}
 .product-variant-line .add-info .qty-input,.product-essential .add-info .qty-input{width:40px;}
 .product-variant-line .attributes{}
 .product-variant-line .attributes .attributeVariantItem{margin:10px 0px}
@@ -780,7 +780,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .related-products-grid,.also-purchased-products-grid{}
 .related-products-grid .title,.also-purchased-products-grid .title{padding:10px 10px 10px 0;font-weight:700;text-transform:uppercase;clear:both;}
 .related-products-grid .item-box,.also-purchased-products-grid .item-box{padding-bottom:10px;text-align:center;vertical-align:text-top;}
-.related-products-grid .item,.also-purchased-products-grid .item{text-align:center;margin:25px;border:1px solid #E8E6D2;width:200px;height:200px;}
+.related-products-grid .item,.also-purchased-products-grid .item{text-align:center;margin:13px;border:1px solid #E8E6D2;/*width:200px;height:200px;*/}
 .related-products-grid .item .product-title,.also-purchased-products-grid .item .product-title{margin-bottom:5px;margin-top:5px;text-align:center;font-weight:700;text-transform:none;font-size:1em;padding:0;}
 .related-products-grid .item .picture,.also-purchased-products-grid .item .picture{text-align:center;}
 .productspec-box{}
