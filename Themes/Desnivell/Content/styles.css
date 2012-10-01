@@ -1092,3 +1092,8 @@ a:hover{text-decoration:underline}
 .oauth-login-facebook{width:263px;border:1px solid #E8E6D2;margin-left:11px}
 .oauth-login-facebook legend{font-weight:bold}
 /*FIN CMAS*/
+#StoreClosed h1, #StoreClosed p  {text-align:center;}
+#StoreClosed .bodyMesage {display:table; margin: 15px; margin-bottom:100px;margin-top:50px}
+#StoreClosed .followus_footer {margin: 50 auto;text-align:center;width: 900px;}
+#StoreClosed .followus_footer ul {padding: 0px;}
+#StoreClosed .footer .copyright {margin: 0px; width:100%}
