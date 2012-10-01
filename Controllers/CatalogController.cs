@@ -2115,6 +2115,52 @@ namespace Nop.Web.Controllers
             feed.Items = items;
             return new RssActionResult() { Feed = feed };
         }
+        /// <summary>
+        /// Añadido CMAS- Ver Best Sellers desde Menú
+        /// </summary>
+        /// <param name="productThumbPictureSize"></param>
+        /// <returns></returns>
+        public ActionResult HomepageBestSellers_Menu(int? productThumbPictureSize)
+        {
+            if (_catalogSettings.NumberOfBestsellersOnHomepage == 0)
+                return Content("");
+
+            //load and cache report
+            var report = _cacheManager.Get(ModelCacheEventConsumer.HOMEPAGE_BESTSELLERS_IDS_KEY,
+                () => _orderReportService.BestSellersReport(null, null, null, null, null, _catalogSettings.NumberOfBestsellersOnHomepage));
+            var products = new List<Product>();
+            foreach (var line in report)
+            {
+                var productVariant = _productService.GetProductVariantById(line.ProductVariantId);
+                if (productVariant != null)
+                {
+                    var product = productVariant.Product;
+                    if (product != null)
+                    {
+                        bool contains = false;
+                        foreach (var p in products)
+                        {
+                            if (p.Id == product.Id)
+                            {
+                                contains = true;
+                                break;
+                            }
+                        }
+                        if (!contains)
+                            products.Add(product);
+                    }
+                }
+            }
+
+            var model = new HomePageBestsellersModel()
+            {
+                UseSmallProductBox = _catalogSettings.UseSmallProductBoxOnHomePage,
+            };
+            model.Products = PrepareProductOverviewModels(products,
+                !_catalogSettings.UseSmallProductBoxOnHomePage, true, productThumbPictureSize)
+                .ToList();
+            return View(model);
+        }
 
         [ChildActionOnly]
         public ActionResult HomepageBestSellers(int? productThumbPictureSize)

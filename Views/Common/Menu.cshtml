@@ -20,6 +20,7 @@
     {
         <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
     }
-    <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+    <li><a href="@Url.RouteUrl("Topic", new { SystemName = "Quienes-somos" })">@T("AboutUs")</a></li>
+    <li><a href="@Url.RouteUrl("Topic", new { SystemName = "Contactar" })">@T("ContactUs")</a></li>
     @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "header_menu_after" })
 </ul>

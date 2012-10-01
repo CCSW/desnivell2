@@ -28,10 +28,10 @@
         @Html.Raw(Model.ShortDescription)
     </div>
     *@
-    <div class="add-info">
-        <h2 class="product-title">
+    <h2 class="product-title">
             <a href="@Url.RouteUrl("Product", new { productId = Model.Id, SeName = Model.SeName })">@Model.Name</a>
         </h2>
+    <div class="add-info">        
         <div class="prices">
             @if (!String.IsNullOrEmpty(Model.ProductPrice.OldPrice))
             {
@@ -44,13 +44,14 @@
         <!--product manufacturers-->
         @Html.Action("ProductManufacturersOnProductsGrid", "Catalog", new { productId = Model.Id })
         </div>
-        <div class="buttons">
+               
+        @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "productbox_add_info" })
+    </div>
+    <div class="buttons">
             @*<input type="button" value="@T("Products.Details")" class="productlistproductdetailbutton" onclick="setLocation('@Url.RouteUrl("Product", new { productId = Model.Id, SeName = Model.SeName })')" />*@
             @if (!Model.ProductPrice.DisableBuyButton)
             {
                 <input type="button" value="@(Model.ProductPrice.AvailableForPreOrder ? T("ShoppingCart.PreOrder") : T("ShoppingCart.AddToCart"))" class="productlistaddtocartbutton" onclick="AjaxCart.addproducttocart('@addtocartlink');return false;" />
             }
-        </div>        
-        @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "productbox_add_info" })
-    </div>
+        </div> 
 </div>

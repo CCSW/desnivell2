@@ -45,7 +45,7 @@
         @Html.Action("ManufacturerNavigation", "Catalog", new { currentManufacturerId = currentManufacturerId })
         <div class="clear">
         </div>
-        @Html.Action("PopularProductTags", "Catalog")
+        @*@Html.Action("PopularProductTags", "Catalog")*@
         <div class="clear">
         </div>
        @*@Html.Action("InfoBlock", "Common")*@
@@ -101,6 +101,7 @@
         @Html.Action("ShippingBlock", "Common")        
         <div class="clear">
         </div>
+        @Html.Action("PopularProductTags", "Catalog")
        
     }
 </div>
