@@ -1091,3 +1091,8 @@ a:hover{text-decoration:underline}
 .followus_footer{float:left;text-align:left;width:20%;}
 .followus_footer li{display:inline}
 /*FIN CMAS*/
+#StoreClosed h1, #StoreClosed p  {text-align:center;}
+#StoreClosed .bodyMesage {display:table; margin: 15px; margin-bottom:100px;margin-top:50px}
+#StoreClosed .followus_footer {margin: 50 auto;text-align:center;width: 900px;}
+#StoreClosed .followus_footer ul {padding: 0px;}
+#StoreClosed .footer .copyright {margin: 0px; width:100%}
