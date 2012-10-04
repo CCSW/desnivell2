@@ -283,11 +283,6 @@ namespace Nop.Web.Infrastructure
                             new[] { "Nop.Web.Controllers" });
             
 
-            //contact us
-            routes.MapLocalizedRoute("ContactUs",
-                            "contactus",
-                            new { controller = "Common", action = "ContactUs" },
-                            new[] { "Nop.Web.Controllers" });
 
             //passwordrecovery
             routes.MapLocalizedRoute("PasswordRecovery",
@@ -599,6 +594,10 @@ namespace Nop.Web.Infrastructure
             routes.MapLocalizedRoute("TopicPopup",
                             "t-popup/{SystemName}",
                             new { controller = "Topic", action = "TopicDetailsPopup" },
+                            new[] { "Nop.Web.Controllers" });
+            routes.MapLocalizedRoute("ContactUs",
+                            "contactus",
+                            new { controller = "Common", action = "ContactUs" },
                             new[] { "Nop.Web.Controllers" });
             //sitemaps
             routes.MapLocalizedRoute("Sitemap",

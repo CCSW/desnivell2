@@ -60,9 +60,11 @@
     @*subcategories*@
     @if (Model.SubCategories.Count > 0)
     {
-        <div class="sub-category-grid">
-            <ul>
-            @for (int i=0; i < Model.SubCategories.Count; i++)
+        <div class="sub-category-grid">            
+            <ul>@*<div class="subcattitle">
+                  "Filtrar por tipo de " @Model.SeName
+             </div>*@
+            @for (int i = 0; i < Model.SubCategories.Count; i++)
             {
                 var item = Model.SubCategories[i];
                 <li class="category-item"><a href="@Url.RouteUrl("Category", new { categoryId = item.Id, SeName = item.SeName })" title="@item.PictureModel.Title">
