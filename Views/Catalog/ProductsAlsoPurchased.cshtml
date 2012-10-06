@@ -31,19 +31,20 @@
     Html.AppendScriptParts(@Url.Content("~/Scripts/jquery.jcarousel.min.js"));    
 }
 <script type="text/javascript">
+
     jQuery(document).ready(function () {
-        jQuery('#mycarousel').jcarousel({
-            wrap: 'circular'
+        jQuery('#mycarouselAPurchased').jcarousel({
+            itemFallbackDimension: 200
         });
     });
+
 </script>
-<div id="wrap">
     @if (Model.Count > 0)
     {
-        <ul id="mycarousel" class="jcarousel-skin-tango-related">
+        <ul id="mycarouselAPurchased" class="jcarousel-skin-tango-related">
         @foreach (var item in Model)
         {
-            <li class="jcarousel">
+            <li class="jcarousel" height="200px" width="200px">
                 <div class="item">
                     <div class="product-title">
                         <a href="@Url.RouteUrl("Product", new { productId = item.Id, SeName = item.SeName })" title="@item.DefaultPictureModel.Title">
@@ -51,7 +52,8 @@
                     </div>
                     <div class="picture">
                         <a href="@Url.RouteUrl("Product", new { productId = item.Id, SeName = item.SeName })" title="@item.DefaultPictureModel.Title">
-                            <img alt="@item.DefaultPictureModel.AlternateText" src="@item.DefaultPictureModel.ImageUrl" title="@item.DefaultPictureModel.Title" /></a>
+                            <img alt="@item.DefaultPictureModel.AlternateText" src="@item.DefaultPictureModel.ImageUrl" title="@item.DefaultPictureModel.Title"/>
+                        </a>
                     </div>
                 </div>
             </li>     
@@ -59,5 +61,4 @@
         </ul>
     }
     </div>
-</div>
 }
