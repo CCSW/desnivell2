@@ -1270,8 +1270,8 @@
     <Content Include="Scripts\2012.1.214\telerik.upload.min.js" />
     <Content Include="Scripts\2012.1.214\telerik.window.min.js" />
     <Content Include="Scripts\fileuploader.js" />
-    <Content Include="Scripts\jquery.jcarousel.js" />
-    <Content Include="Scripts\jquery.jcarousel.min.js" />
+    <Content Include="Scripts\jquery.jcarousel-all.js" />
+    <Content Include="Scripts\jquery.jcarousel-all.min.js" />
     <Content Include="Scripts\jquery.nivo.slider.pack.js" />
     <Content Include="Scripts\public.ajaxcart.js" />
     <Content Include="Scripts\public.accordion.js" />
@@ -1350,6 +1350,7 @@
     <Content Include="Themes\Desnivell\Content\images\star_x_active.gif" />
     <Content Include="Themes\Desnivell\Content\images\star_x_inactive.gif" />
     <Content Include="Themes\Desnivell\Content\images\visa.png" />
+    <Content Include="Themes\Desnivell\Content\jcarouse_horizontal.css" />
     <Content Include="Themes\Desnivell\Content\nivo-slider.css" />
     <Content Include="Themes\Desnivell\Content\skin.css" />
     <Content Include="Themes\Desnivell\Content\styles.css" />
@@ -1746,6 +1747,10 @@
     <Content Include="Themes\Desnivell\Views\Shared\Head.cshtml" />
     <Content Include="Themes\Desnivell\Views\Web.config" />
     <Content Include="Views\ShoppingCart\MiniShoppingCart.cshtml" />
+    <Content Include="Views\Catalog\ProductsWithDiscount.cshtml" />
+    <Content Include="Views\Catalog\ProductReviewOverviewOnProductsGrid.cshtml" />
+    <Content Include="Views\Catalog\ProductManufacturersOnProductsGrid.cshtml" />
+    <Content Include="Views\Catalog\HomepageBestSellers_Menu.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

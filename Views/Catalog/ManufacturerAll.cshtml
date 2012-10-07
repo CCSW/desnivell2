@@ -29,21 +29,38 @@
 </div>*@
 @{    
     //resources
-    Html.AppendCssFileParts(@Url.Content("~/Themes/Desnivell/Content/skin.css"));
+    Html.AppendCssFileParts(@Url.Content("~/Themes/Desnivell/Content/jcarouse_horizontal.css"));
     Html.AppendScriptParts(@Url.Content("~/Scripts/jquery-1.7.1.min.js"));
-    Html.AppendScriptParts(@Url.Content("~/Scripts/jquery.jcarousel.min.js"));    
+    Html.AppendScriptParts(@Url.Content("~/Scripts/jquery.jcarousel-all.min.js"));    
 }
 <script type="text/javascript">
-   jQuery(document).ready(function () {
-        jQuery('#mycarousel').jcarousel({
+    $(document).ready(function () {
+        var marcasCarousel = $('#marcasCarousel').jcarousel({
+            // Core configuration goes here
             wrap: 'circular'
+        });
+
+        $('#marcasCarousel-pagination').jcarouselPagination({
+            // Configuration options
+            carousel: marcasCarousel
+        });
+
+        $('#marcas-prev').jcarouselControl({
+            target: '-=2',
+            carousel: marcasCarousel
+        });
+
+        $('#marcas-next').jcarouselControl({
+            target: '+=2',
+            carousel: marcasCarousel
         });
     });
 </script>
-<div id="wrap">
     @if (Model.Count > 0)
     {
-        <ul id="mycarousel" class="jcarousel-skin-tango">
+    <div class="jcarousel-skin-default">
+        <div class="jcarousel" id="marcasCarousel">
+        <ul>
         @foreach (var item in Model)
         {
             <li>
@@ -53,6 +70,13 @@
             </li>       
         }
         </ul>
+        </div>
+        <!-- Controls -->
+        <a id="marcas-prev" class="jcarousel-prev" href="#">Prev</a>
+        <a id="marcas-next" class="jcarousel-next" href="#">Next</a>
+        <!-- Pagination -->
+        <div id="marcasCarousel-pagination" class="jcarousel-pagination">
+        </div>
+        </div>
     }
-</div>
 </div>
