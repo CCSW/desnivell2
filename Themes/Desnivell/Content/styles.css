@@ -777,10 +777,10 @@ ul.languagelist li:hover{cursor:pointer;}
 .product-variant-line .giftCard .sendername{}
 .product-variant-line .giftCard .senderemail{}
 .product-variant-line .giftCard .message{width:300px;height:100px;}
-.related-products-grid,.also-purchased-products-grid{}
+.related-products-grid,.also-purchased-products-grid{margin-top:30px}
 .related-products-grid .title,.also-purchased-products-grid .title{padding:10px 10px 10px 0;font-weight:700;text-transform:uppercase;clear:both;}
 .related-products-grid .item-box,.also-purchased-products-grid .item-box{padding-bottom:10px;text-align:center;vertical-align:text-top;}
-.related-products-grid .item,.also-purchased-products-grid .item{text-align:center;margin:13px;border:1px solid #E8E6D2;/*width:200px;height:200px;*/}
+.related-products-grid .item,.also-purchased-products-grid .item{text-align:center;margin:10px;/*border:1px solid #E8E6D2;width:200px;height:200px;*/}
 .related-products-grid .item .product-title,.also-purchased-products-grid .item .product-title{margin-bottom:5px;margin-top:5px;text-align:center;font-weight:700;text-transform:none;font-size:1em;padding:0;}
 .related-products-grid .item .picture,.also-purchased-products-grid .item .picture{text-align:center;}
 .productspec-box{}

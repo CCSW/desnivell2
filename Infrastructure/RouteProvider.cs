@@ -24,7 +24,7 @@ namespace Nop.Web.Infrastructure
             //                new[] { "Nop.Web.Controllers" });
 
             routes.MapLocalizedRoute("Product",
-                            "{SeName}-p_{productId}",
+                            "{SeName}-p-{productId}",
                             new { controller = "Catalog", action = "Product", SeName = UrlParameter.Optional },
                             new { productId = @"\d+" },
                             new[] { "Nop.Web.Controllers" });
