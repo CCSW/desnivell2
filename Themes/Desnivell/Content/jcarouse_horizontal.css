@@ -1,13 +1,14 @@
 .jcarousel-skin-default .jcarousel {
-    position: relative;
-    overflow: hidden;
     height: 235px;
+    margin: 0px 40px;
+    overflow: hidden;
+    position: relative;
 }
 .manufacturerlist-page .jcarousel-skin-default .jcarousel {
     height: 100px;
 }
 
-.jcarousel-skin-default ul {
+.jcarousel-skin-default .jcarousel ul {
     width: 20000px;
     position: absolute;
     list-style: none;
@@ -15,7 +16,7 @@
     padding: 0;
 }
 
-.jcarousel-skin-default li {
+.jcarousel-skin-default .jcarousel li {
     float: left;
     margin: 0 10px 0 0;
     padding: 0;
@@ -27,7 +28,108 @@
 }
 
 /** Custom **/
+.jcarousel-skin-default .jcarousel-controls {
+    display: table;
+    height: 235px;
+    margin-top: -235px;    
+    width: 100%;
+}
+
+.manufacturerlist-page  .jcarousel-skin-default .jcarousel-controls {
+    height: 100px;
+    margin-top: -100px;    
+}
 
 .jcarousel-skin-default li img {
     border: 0;
+}
+
+/** NEXT & PREVIOUS **/
+.jcarousel-skin-default  .jcarousel-next:hover,
+.jcarousel-skin-default  .jcarousel-next:focus,
+.jcarousel-skin-default  .jcarousel-next:active {
+    background-position: 10px 0;
+}
+
+.jcarousel-skin-default  .jcarousel-next-disabled,
+.jcarousel-skin-default  .jcarousel-next-disabled:hover,
+.jcarousel-skin-default  .jcarousel-next-disabled:focus,
+.jcarousel-skin-default  .jcarousel-next-disabled:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+.jcarousel-skin-default .jcarousel-next,
+.jcarousel-skin-default .jcarousel-prev {
+    cursor: pointer;
+    height: 235px;
+    width: 35px;
+}
+
+.jcarousel-skin-default .jcarousel-next {
+    background: transparent url(images/next.gif) no-repeat 0 80px;
+    float: right;
+    padding-left:10px;
+    text-indent: 500px;
+}
+
+.jcarousel-skin-default .jcarousel-prev {
+    background: white url(images/prev.gif) no-repeat 0 80px;
+    float: left;
+    padding-right:5px;
+    text-indent: -500px;
+
+}
+
+.manufacturerlist-page  .jcarousel-skin-default .jcarousel-next,
+.manufacturerlist-page .jcarousel-skin-default .jcarousel-prev {
+    background-position: 0 30px;
+    height: 100px;
+}
+
+
+.jcarousel-skin-default .jcarousel-next:hover,
+.jcarousel-skin-default .jcarousel-next:focus,
+.jcarousel-skin-default .jcarousel-next:active {
+    background-position: 10px 80px;
+}
+
+.manufacturerlist-page .jcarousel-skin-default .jcarousel-next:hover,
+.manufacturerlist-page .jcarousel-skin-default .jcarousel-next:focus,
+.manufacturerlist-page .jcarousel-skin-default .jcarousel-next:active {
+    background-position: 10px 30px;
+}
+
+.jcarousel-skin-default .jcarousel-next-disabled,
+.jcarousel-skin-default .jcarousel-next-disabled,
+.jcarousel-skin-default .jcarousel-next-disabled,
+.jcarousel-skin-default .jcarousel-next-disabled {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+.jcarousel-skin-default .jcarousel-prev:hover, 
+.jcarousel-skin-default .jcarousel-prev:focus,
+.jcarousel-skin-default .jcarousel-prev:active 
+{
+    background-position: -10px 80px;
+}
+
+.manufacturerlist-page .jcarousel-skin-default .jcarousel-prev:hover, 
+.manufacturerlist-page .jcarousel-skin-default .jcarousel-prev:focus,
+.manufacturerlist-page .jcarousel-skin-default .jcarousel-prev:active 
+{
+    background-position: -10px 30px;
+}
+
+.jcarousel-skin-default .jcarousel-prev-disabled,
+.jcarousel-skin-default .jcarousel-prev-disabled:hover,
+.jcarousel-skin-default .jcarousel-prev-disabled:focus,
+.jcarousel-skin-default .jcarousel-prev-disabled:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+.jcarousel-skin-default .jcarousel .item 
+{
+    margin: 0px;
 }
