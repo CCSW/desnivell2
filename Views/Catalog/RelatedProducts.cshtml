@@ -38,10 +38,10 @@
             wrap: 'circular'
         });
 
-        $('#mycarouselRelated-pagination').jcarouselPagination({
-            // Configuration options
-            carousel: relatedCarousel
-        });
+//        $('#mycarouselRelated-pagination').jcarouselPagination({
+//            // Configuration options
+//            carousel: relatedCarousel
+//        });
 
         $('#related-prev').jcarouselControl({
             target: '-=1',
@@ -80,12 +80,15 @@
         }
         </ul>
         </div>
-        <!-- Controls -->
-        <a id="related-prev" class="jcarousel-prev" href="#">Prev</a>
-        <a id="related-next" class="jcarousel-next" href="#">Next</a>
-        <!-- Pagination -->
-        <div id="mycarouselRelated-pagination" class="jcarousel-pagination">
+        <div class="jcarousel-controls">
+            <!-- Controls -->
+            <a id="related-prev" class="jcarousel-prev" href="#">Prev</a>
+            <a id="related-next" class="jcarousel-next" href="#">Next</a>
         </div>
+
+        <!-- Pagination 
+        <div id="mycarouselRelated-pagination" class="jcarousel-pagination"></div>
+        -->
         </div>
         
     }
