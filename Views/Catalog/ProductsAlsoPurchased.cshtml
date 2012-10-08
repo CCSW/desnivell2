@@ -26,24 +26,42 @@
             ))*@
 @{    
     //resources
-    Html.AppendCssFileParts(@Url.Content("~/Themes/Desnivell/Content/carousel_relateds.css"));
+    Html.AppendCssFileParts(@Url.Content("~/Themes/Desnivell/Content/jcarouse_horizontal.css"));
     Html.AppendScriptParts(@Url.Content("~/Scripts/jquery-1.7.1.min.js"));
-    Html.AppendScriptParts(@Url.Content("~/Scripts/jquery.jcarousel.min.js"));    
+    Html.AppendScriptParts(@Url.Content("~/Scripts/jquery.jcarousel-all.min.js"));    
 }
 <script type="text/javascript">
-    jQuery(document).ready(function () {
-        jQuery('#mycarousel').jcarousel({
-            wrap: 'circular'
+    $(document).ready(function () {
+        var purchasedCarousel = $('#mycarouselAPurchased').jcarousel({
+        // Core configuration goes here
+        //wrap: 'circular'
         });
-    });
+
+        $('#mycarouselAPurchased-pagination').jcarouselPagination({
+        // Configuration options
+            carousel: purchasedCarousel
+        });
+
+        $('#aPurchased-prev').jcarouselControl({
+            target: '-=1',
+            carousel: purchasedCarousel
+        });
+
+        $('#aPurchased-next').jcarouselControl({
+            target: '+=1',
+            carousel: purchasedCarousel
+        });
+
+});
 </script>
-<div id="wrap">
     @if (Model.Count > 0)
     {
-        <ul id="mycarousel" class="jcarousel-skin-tango-related">
+    <div class="jcarousel-skin-default">
+        <div class="jcarousel" id="mycarouselAPurchased">
+        <ul>
         @foreach (var item in Model)
         {
-            <li class="jcarousel">
+            <li>
                 <div class="item">
                     <div class="product-title">
                         <a href="@Url.RouteUrl("Product", new { productId = item.Id, SeName = item.SeName })" title="@item.DefaultPictureModel.Title">
@@ -51,13 +69,22 @@
                     </div>
                     <div class="picture">
                         <a href="@Url.RouteUrl("Product", new { productId = item.Id, SeName = item.SeName })" title="@item.DefaultPictureModel.Title">
-                            <img alt="@item.DefaultPictureModel.AlternateText" src="@item.DefaultPictureModel.ImageUrl" title="@item.DefaultPictureModel.Title" /></a>
+
+                            <img alt="@item.DefaultPictureModel.AlternateText" src="@item.DefaultPictureModel.ImageUrl" title="@item.DefaultPictureModel.Title"/>
+
+                        </a>
                     </div>
                 </div>
             </li>     
         }
         </ul>
+        </div>
+        <!-- Controls -->
+        <a id="aPurchased-prev" class="jcarousel-prev" href="#">Prev</a>
+        <a id="aPurchased-next" class="jcarousel-next" href="#">Next</a>
+        <!-- Pagination -->
+        <div class="jcarousel-pagination" id="mycarouselAPurchased-pagination"></div>
+    </div>
     }
     </div>
-</div>
 }
