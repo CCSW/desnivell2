@@ -37,10 +37,10 @@
         //wrap: 'circular'
         });
 
-        $('#mycarouselAPurchased-pagination').jcarouselPagination({
-        // Configuration options
-            carousel: purchasedCarousel
-        });
+//        $('#mycarouselAPurchased-pagination').jcarouselPagination({
+//        // Configuration options
+//            carousel: purchasedCarousel
+//        });
 
         $('#aPurchased-prev').jcarouselControl({
             target: '-=1',
@@ -79,11 +79,14 @@
         }
         </ul>
         </div>
-        <!-- Controls -->
-        <a id="aPurchased-prev" class="jcarousel-prev" href="#">Prev</a>
-        <a id="aPurchased-next" class="jcarousel-next" href="#">Next</a>
-        <!-- Pagination -->
+        <div class="jcarousel-controls">
+            <!-- Controls -->
+            <a id="aPurchased-prev" class="jcarousel-prev" href="#">Prev</a>
+            <a id="aPurchased-next" class="jcarousel-next" href="#">Next</a>
+        </div>
+        <!-- Pagination 
         <div class="jcarousel-pagination" id="mycarouselAPurchased-pagination"></div>
+        -->
     </div>
     }
     </div>

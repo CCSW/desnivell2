@@ -40,10 +40,10 @@
             wrap: 'circular'
         });
 
-        $('#marcasCarousel-pagination').jcarouselPagination({
-            // Configuration options
-            carousel: marcasCarousel
-        });
+//        $('#marcasCarousel-pagination').jcarouselPagination({
+//            // Configuration options
+//            carousel: marcasCarousel
+//        });
 
         $('#marcas-prev').jcarouselControl({
             target: '-=2',
@@ -71,12 +71,14 @@
         }
         </ul>
         </div>
-        <!-- Controls -->
-        <a id="marcas-prev" class="jcarousel-prev" href="#">Prev</a>
-        <a id="marcas-next" class="jcarousel-next" href="#">Next</a>
-        <!-- Pagination -->
-        <div id="marcasCarousel-pagination" class="jcarousel-pagination">
+        <div class="jcarousel-controls">
+            <!-- Controls -->
+            <a id="marcas-prev" class="jcarousel-prev" href="#">Prev</a>
+            <a id="marcas-next" class="jcarousel-next" href="#">Next</a>
         </div>
+        <!-- Pagination
+        <div id="marcasCarousel-pagination" class="jcarousel-pagination"></div>
+        -->
         </div>
     }
 </div>
