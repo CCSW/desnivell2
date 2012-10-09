@@ -23,6 +23,15 @@ namespace Nop.Web.Infrastructure
             //                new { productId = @"\d+" }, //expresión regular que indica que productId ha de ser un número
             //                new[] { "Nop.Web.Controllers" });
 
+            //sitemaps
+            routes.MapLocalizedRoute("Sitemap",
+                            "sitemap",
+                            new { controller = "Common", action = "Sitemap" },
+                            new[] { "Nop.Web.Controllers" });
+            routes.MapLocalizedRoute("SitemapSEO",
+                            "sitemapseo",
+                            new { controller = "Common", action = "SitemapSeo" },
+                            new[] { "Nop.Web.Controllers" });
             routes.MapLocalizedRoute("Product",
                             "{SeName}-p-{productId}",
                             new { controller = "Catalog", action = "Product", SeName = UrlParameter.Optional },
@@ -598,15 +607,6 @@ namespace Nop.Web.Infrastructure
             routes.MapLocalizedRoute("ContactUs",
                             "contactus",
                             new { controller = "Common", action = "ContactUs" },
-                            new[] { "Nop.Web.Controllers" });
-            //sitemaps
-            routes.MapLocalizedRoute("Sitemap",
-                            "sitemap",
-                            new { controller = "Common", action = "Sitemap" },
-                            new[] { "Nop.Web.Controllers" });
-            routes.MapLocalizedRoute("SitemapSEO",
-                            "sitemapseo",
-                            new { controller = "Common", action = "SitemapSeo" },
                             new[] { "Nop.Web.Controllers" });
 
             //product tags
