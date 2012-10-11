@@ -8,7 +8,7 @@
     Html.AddTitleParts(T("PageTitle.ContactUs").Text);
 }
 <div class="contact-form">
-    @Html.Action("TopicBlock", "Topic", new { systemName = "ContactUs" })
+    @Html.Action("TopicBlock", "Topic", new { systemName = "Contactar" })
     <div class="clear">
     </div>
     @if (Model.SuccessfullySent)
@@ -20,8 +20,8 @@
     else
     {
         using (Html.BeginForm())
-        {    
-        <div class="send-email">
+        {          
+        <div class="send-email">            
             <table class="table-container">
                 <tr>
                     <td class="message-error" colspan="2">
@@ -76,5 +76,6 @@
             </table>
         </div>  
         }
-    }
+    }   
+    @Html.Action("TopicBlock", "Topic", new { systemName = "map" })    
 </div>
