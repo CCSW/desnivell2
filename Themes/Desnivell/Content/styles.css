@@ -573,7 +573,7 @@ ul.languagelist li:hover{cursor:pointer;}
 .search-input .warning{text-decoration:underline;}
 .contact-form{}
 .contact-form .buttons{text-align:right;}
-.contact-form .send-email{}
+.contact-form .send-email{background-color: #F5F5F5;border: 1px solid #CCCCCC;border-radius: 7px 7px 7px 7px;margin-bottom:45px;width: 81%}
 .contact-form .send-email .fullname{width:250px;}
 .contact-form .send-email .email{width:250px;}
 .contact-form .send-email .enquiry{width:350px;height:150px;}
