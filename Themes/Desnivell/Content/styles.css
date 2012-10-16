@@ -148,7 +148,7 @@ td.fieldname{font-size:12px;}
 .shippingmethodnextstepbutton,.paymentmethodnextstepbutton,.paymentinfonextstepbutton,.confirmordernextstepbutton,
 .submitforumtopicbutton,.submitpmbutton,.replypmbutton,.deleteselectedpmbutton,.reorderbutton,.minicartcheckoutbutton,
 .newsletterbox-subscribebutton,.useragreementbutton,.deleteselectedfsbutton,.submitreturnrequestbutton,.uploadavatarbutton,
-.checkavailabilitybutton,.productlistaddtocartbutton,.productgridaddtocartbutton,.productvariantaddtowishlistbutton,
+.checkavailabilitybutton,.productlistaddtocartbutton,.productgridaddtocartbutton,/*.productvariantaddtowishlistbutton,*/
 .productemailafriendbutton,.productaddtocomparelistbutton,.editaddressbutton,.deleteaddressbutton,.cancelrecurringorderbutton,
 .orderdetailsbutton,.returnitemsbutton,.orderdetailsprintbutton,.estimateshippingbutton,.updatewishlistbutton,.applycouponcodebutton,
 .updatecartbutton,.continueshoppingbutton,.orderprocessedcontinuebutton,.submitpollvotebutton,.cancelforumtopicbutton,.forumsearchbutton,
@@ -182,7 +182,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78b23e', end
 .shippingmethodnextstepbutton:hover,.paymentmethodnextstepbutton:hover,.paymentinfonextstepbutton:hover,.confirmordernextstepbutton:hover,
 .submitforumtopicbutton:hover,.submitpmbutton:hover,.replypmbutton:hover,.deleteselectedpmbutton:hover,.reorderbutton:hover,.minicartcheckoutbutton:hover,
 .newsletterbox-subscribebutton:hover,.useragreementbutton:hover,.deleteselectedfsbutton:hover,.submitreturnrequestbutton:hover,.uploadavatarbutton:hover,
-.checkavailabilitybutton:hover,.productlistaddtocartbutton:hover,.productgridaddtocartbutton:hover,.productvariantaddtowishlistbutton:hover,
+.checkavailabilitybutton:hover,.productlistaddtocartbutton:hover,.productgridaddtocartbutton:hover,/*.productvariantaddtowishlistbutton:hover,*/
 .productemailafriendbutton:hover,.productaddtocomparelistbutton:hover,.editaddressbutton:hover,.deleteaddressbutton:hover,.cancelrecurringorderbutton:hover,
 .orderdetailsbutton:hover,.returnitemsbutton:hover,.orderdetailsprintbutton:hover,.estimateshippingbutton:hover,.updatewishlistbutton:hover,.applycouponcodebutton:hover,
 .updatecartbutton:hover,.continueshoppingbutton:hover,.orderprocessedcontinuebutton:hover,.submitpollvotebutton:hover,.cancelforumtopicbutton:hover,.forumsearchbutton:hover,
@@ -217,7 +217,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78b23e', end
 .shippingmethodnextstepbutton:active,.paymentmethodnextstepbutton:active,.paymentinfonextstepbutton:active,.confirmordernextstepbutton:active,
 .submitforumtopicbutton:active,.submitpmbutton:active,.replypmbutton:active,.deleteselectedpmbutton:active,.reorderbutton:active,.minicartcheckoutbutton:active,
 .newsletterbox-subscribebutton:active,.useragreementbutton:active,.deleteselectedfsbutton:active,.submitreturnrequestbutton:active,.uploadavatarbutton:active,
-.checkavailabilitybutton:active,.productlistaddtocartbutton:active,.productgridaddtocartbutton:active,.productvariantaddtowishlistbutton:active,
+.checkavailabilitybutton:active,.productlistaddtocartbutton:active,.productgridaddtocartbutton:active,/*.productvariantaddtowishlistbutton:active,*/
 .productemailafriendbutton:active,.productaddtocomparelistbutton:active,.editaddressbutton:active,.deleteaddressbutton:active,.cancelrecurringorderbutton:active,
 .orderdetailsbutton:active,.returnitemsbutton:active,.orderdetailsprintbutton:active,.estimateshippingbutton:active,.updatewishlistbutton:active,.applycouponcodebutton:active,
 .updatecartbutton:active,.continueshoppingbutton:active,.orderprocessedcontinuebutton:active,.submitpollvotebutton:active,.cancelforumtopicbutton:active,.forumsearchbutton:active,
@@ -230,6 +230,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78b23e', end
     top:3px;
     }
 
+.productvariantaddtowishlistbutton{background:#ff920a;border:none;border-radius:3px;box-shadow:0px 5px 1px #ff7b0d;color:white;font-size:1.1em;font-weight:bold;margin:0px 2px 5px 2px;padding:2px 4px;}
+.productvariantaddtowishlistbutton:hover{background-color:#ffaf4b;box-shadow:0px 5px 1px #ff7b0d}
+.productvariantaddtowishlistbutton:active{box-shadow:0px 2px 1px #ff7b0d;color:white;margin:0px 2px 5px 2px;position:relative;top:3px;}
 ul.languagelist{display:inline;line-height:25px;}
 ul.languagelist li{list-style:none;display:inline;padding:0 5px;}
 ul.languagelist li .selected{border:solid 1px #ccc!important;}
@@ -1044,16 +1047,16 @@ pre{white-space:pre-wrap;/* css-3 */white-space:0;/* Mozilla, since 1999 */white
 .qty{float:left;margin: 0px 2px;}
 .qty-label{color:#444;font-size:1em;text-shadow:1px 1px 2px #999;}
 .qty-input{border:solid 1px #444;color:#666;font-size:1em;text-align:right;}
-.productvariantaddtocartbutton,.productvariantaddtowishlistbutton
+.productvariantaddtocartbutton,/*.productvariantaddtowishlistbutton*/
 {
     box-shadow: 0px 3px 1px #195000;
     font-size:0.85em;
     font-weight:normal;
     padding:2px;
  }
- .productvariantaddtocartbutton:hover,.productvariantaddtowishlistbutton:hover
+ .productvariantaddtocartbutton:hover,/*.productvariantaddtowishlistbutton:hover*/
     {box-shadow: 0px 3px 1px #267700;}
-.productvariantaddtocartbutton:active,.productvariantaddtowishlistbutton:active
+.productvariantaddtocartbutton:active,/*.productvariantaddtowishlistbutton:active*/
     {box-shadow: 0px 1px 1px #267700;top:2px;}
 .sub-category-grid ul {padding:0px}
 .category-item{border-left:solid 1px #888;display:inline;list-style:none;padding:0px 5px;}
