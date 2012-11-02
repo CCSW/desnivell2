@@ -23,6 +23,14 @@
                         <div class="option-name">
                             <input id="paymentmethod_@(i)" type="radio" name="paymentmethod" value="@(paymentMethod.PaymentMethodSystemName)"  @(i == 0 ? Html.Raw(" checked=\"checked\"") : null) />
                             <label for="paymentmethod_@(i)">@paymentMethod.Name</label>
+                            @if (paymentMethod.Name.StartsWith("PayPal"))
+                              {
+                                <img style="vertical-align:middle" src="../../Themes/Desnivell/Content/images/paypal.png" />
+                              }
+                            @if (paymentMethod.Name.StartsWith("Credit") ||paymentMethod.Name.StartsWith("Sermepa"))
+                              {
+                                <img style="vertical-align:middle" src="../../Themes/Desnivell/Content/images/visa.png" /><img style="vertical-align:middle" src="../../Themes/Desnivell/Content/images/mastercard.png" />
+                              }
                             @if (!String.IsNullOrEmpty(paymentMethod.Fee))
                             {
                                 <text>(</text>
