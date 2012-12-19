@@ -22,14 +22,16 @@
                     <div class="payment-method-item">
                         <div class="option-name">
                             <input id="paymentmethod_@(i)" type="radio" name="paymentmethod" value="@(paymentMethod.PaymentMethodSystemName)"  @(i == 0 ? Html.Raw(" checked=\"checked\"") : null) />
-                            <label for="paymentmethod_@(i)">@paymentMethod.Name</label>
+                            @*<label for="paymentmethod_@(i)">@paymentMethod.Name</label>*@
                             @if (paymentMethod.Name.StartsWith("PayPal"))
                               {
                                 <img style="vertical-align:middle" src="../../Themes/Desnivell/Content/images/paypal.png" />
+                                <label style="font-weight:bold">PAYPAL</label>
                               }
-                            @if (paymentMethod.Name.StartsWith("Credit") ||paymentMethod.Name.StartsWith("Sermepa"))
+                            @if (paymentMethod.Name.StartsWith("Ruralvia"))
                               {
-                                <img style="vertical-align:middle" src="../../Themes/Desnivell/Content/images/visa.png" /><img style="vertical-align:middle" src="../../Themes/Desnivell/Content/images/mastercard.png" />
+                                <img style="vertical-align:middle" src="../../Themes/Desnivell/Content/images/visa.png" /><img style="vertical-align:middle;margin-left:5px" src="../../Themes/Desnivell/Content/images/mastercard.png" />
+                                <label style="font-weight:bold">@T("CreditCard")</label>
                               }
                             @if (!String.IsNullOrEmpty(paymentMethod.Fee))
                             {

@@ -18,38 +18,41 @@
             <ul>               
                 @foreach (var category in Model)
                 {
-                     
-                    if (category.NumberOfParentCategories > 0)
-                    {
-                        @*if (this.ShouldUseRtlTheme())
-                        {
-                        <text>style="margin-right: @(category.NumberOfParentCategories * categoryPadding)px"</text>
-                        }
-                        else
-                        {
-                        <text>style="margin-left: @(category.NumberOfParentCategories * categoryPadding)px"</text>                        
-                        }*@
+                    //Añadir este if si solo queremos mostar categorias que tengan producots dados de alta
+                    //if (category.NumberOfProducts > 0)
+                    //{
+                            if (category.NumberOfParentCategories > 0)
+                            {
+                            @*if (this.ShouldUseRtlTheme())
+                            {
+                            <text>style="margin-right: @(category.NumberOfParentCategories * categoryPadding)px"</text>
+                            }
+                            else
+                            {
+                            <text>style="margin-left: @(category.NumberOfParentCategories * categoryPadding)px"</text>                        
+                            }*@
                     
-                    <li class="@(category.IsActive ? "active" : "inactive")">
-                    <a href="@Url.RouteUrl("Category", new { categoryId = category.Id, SeName = category.SeName })">@category.Name
-                        @if (category.DisplayNumberOfProducts)
-                        {
-                            <text> (@(category.NumberOfProducts))</text>
-                        }
-                    </a></li>
-                    }
-                    else
-                    {
-                    <ul>
-                    <li>
-                        <div class="Categorytitle">
-                            <a href="@Url.RouteUrl("Category", new { categoryId = category.Id, SeName = category.SeName })">@category.Name
-                             @if (category.DisplayNumberOfProducts)
-                                {
-                                 <text> (@(category.NumberOfProducts))</text>
-                                }            
-                        </a></div></li></ul>
-                    }
+                        <li class="@(category.IsActive ? "active" : "inactive")">
+                        <a href="@Url.RouteUrl("Category", new { categoryId = category.Id, SeName = category.SeName })">@category.Name
+                            @if (category.DisplayNumberOfProducts)
+                            {
+                                <text> (@(category.NumberOfProducts))</text>
+                            }
+                        </a></li>
+                            }
+                            else
+                            {
+                        <ul>
+                        <li>
+                            <div class="Categorytitle">
+                                <a href="@Url.RouteUrl("Category", new { categoryId = category.Id, SeName = category.SeName })">@category.Name
+                                 @if (category.DisplayNumberOfProducts)
+                                 {
+                                     <text> (@(category.NumberOfProducts))</text>
+                                 }            
+                            </a></div></li></ul>
+                            }
+                    //}
                                                             
                 }
             </ul>

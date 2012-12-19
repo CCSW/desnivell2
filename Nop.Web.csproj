@@ -740,6 +740,7 @@
     <Content Include="Content\editors\tinymce\plugins\template\editor_plugin_src.js" />
     <Content Include="Content\editors\tinymce\plugins\template\js\template.js" />
     <Content Include="Content\editors\tinymce\plugins\template\langs\en_dlg.js" />
+    <Content Include="Content\editors\tinymce\plugins\template\ProductDesc2.htm" />
     <Content Include="Content\editors\tinymce\plugins\template\ProductDesc.htm" />
     <Content Include="Content\editors\tinymce\plugins\template\template.htm" />
     <Content Include="Content\editors\tinymce\plugins\template\template_list.js" />
@@ -1108,6 +1109,9 @@
     <Content Include="Content\Images\flags\zm.png" />
     <Content Include="Content\Images\flags\zw.png" />
     <Content Include="Content\Images\ico-close-notification-bar.png" />
+    <Content Include="Content\Images\icons\icon-facebook.png" />
+    <Content Include="Content\Images\icons\icon-twitter.png" />
+    <Content Include="Content\Images\icons\icon-youtube.png" />
     <Content Include="Content\Images\icon_rss.gif" />
     <Content Include="Content\Images\noDefaultImage.gif" />
     <Content Include="Content\Images\noDefaultImage1.gif" />

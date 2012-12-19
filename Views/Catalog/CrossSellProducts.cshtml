@@ -17,21 +17,38 @@
     
 @{    
        //resources
-    Html.AppendCssFileParts(@Url.Content("~/Themes/Desnivell/Content/carousel_relateds.css"));
+       Html.AppendCssFileParts(@Url.Content("~/Themes/Desnivell/Content/jcarouse_horizontal.css"));
        Html.AppendScriptParts(@Url.Content("~/Scripts/jquery-1.7.1.min.js"));
-       Html.AppendScriptParts(@Url.Content("~/Scripts/jquery.jcarousel.min.js"));    
+       Html.AppendScriptParts(@Url.Content("~/Scripts/jquery.jcarousel-all.min.js"));    
 }
 <script type="text/javascript">
-    jQuery(document).ready(function () {
-        jQuery('#myCrossedcarousel').jcarousel({
+    $(document).ready(function () {
+        var relatedCarousel = $('#myCrossedcarousel').jcarousel({
+            // Core configuration goes here
             wrap: 'circular'
+        });
+
+//        $('#mycarouselRelated-pagination').jcarouselPagination({
+//            // Configuration options
+//            carousel: relatedCarousel
+//        });
+
+        $('#related-prev').jcarouselControl({
+            target: '-=1',
+            carousel: relatedCarousel
+        });
+
+        $('#related-next').jcarouselControl({
+            target: '+=1',
+            carousel: relatedCarousel
         });
     });
 </script>
-<div id="wrap">
     @if (Model.Count > 0)
     {
-        <ul id="myCrossedcarousel" class="jcarousel-skin-tango-related">
+    <div class="jcarousel-skin-default">
+        <div class="jcarousel" id="myCrossedcarousel">
+        <ul>
         @foreach (var item in Model)
         {
              <li class="jcarousel">
@@ -48,7 +65,19 @@
             </li>  
         }
         </ul>
+        </div>
+        <div class="jcarousel-controls">
+            <!-- Controls -->
+            <a id="related-prev" class="jcarousel-prev" href="#">Prev</a>
+            <a id="related-next" class="jcarousel-next" href="#">Next</a>
+        </div>
+
+        <!-- Pagination 
+        <div id="myCrossedcarousel" class="jcarousel-pagination"></div>
+        -->
+        </div>
+        
     }
-</div>
-</div>
+    
+    </div>
 }

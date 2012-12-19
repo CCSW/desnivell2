@@ -12,8 +12,8 @@ ExternalAuth.OpenId
 ExternalAuth.Facebook
 ExternalAuth.Twitter
 Misc.MailChimp
-Payments.PayPalDirect
 Payments.PayPalStandard
+Payments.Ruralvia
 PromotionFeed.Froogle
 Shipping.FixedRate
 Shipping.ByWeight
@@ -21,4 +21,4 @@ Shipping.UPS
 Tax.FixedRate
 Widgets.GoogleAnalytics
 Widgets.LivePersonChat
-Payments.Sermepa
+Ruralvia
