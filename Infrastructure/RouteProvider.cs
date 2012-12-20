@@ -44,9 +44,8 @@ namespace Nop.Web.Infrastructure
                             new { controller = "Catalog", action = "RecentlyViewedProducts" },
                             new[] { "Nop.Web.Controllers" });
             routes.MapLocalizedRoute("HomePageBestSellers",
-                           "topventas/",
-                           new { controller = "Catalog", action = "HomepageBestSellers_Menu" },
-                           new[] { "Nop.Web.Controllers" });            
+                           "bicicletas-mas-vendidas/",
+                           new { controller = "Catalog", action = "HomepageBestSellers_Menu" });            
             
             routes.MapLocalizedRoute("RecentlyAddedProducts",
                             "novedades/",
@@ -55,6 +54,11 @@ namespace Nop.Web.Infrastructure
             routes.MapLocalizedRoute("RecentlyAddedProductsRSS",
                             "novedades/rss",
                             new { controller = "Catalog", action = "RecentlyAddedProductsRss" },
+                            new[] { "Nop.Web.Controllers" });
+
+            routes.MapLocalizedRoute("ProductsWithDiscount",
+                            "bicicletas-en-oferta/",
+                            new { controller = "Catalog", action = "ProductsWithDiscount" },
                             new[] { "Nop.Web.Controllers" });
             
             //comparing products
@@ -669,10 +673,7 @@ namespace Nop.Web.Infrastructure
                             "topic/authenticate",
                             new { controller = "Topic", action = "Authenticate" },
                             new[] { "Nop.Web.Controllers" });
-            routes.MapLocalizedRoute("ProductsWithDiscount",
-                            "Ofertas",
-                            new { controller = "Catalog", action = "ProductsWithDiscount" },
-                            new[] { "Nop.Web.Controllers" });
+            
         }
 
         public int Priority
