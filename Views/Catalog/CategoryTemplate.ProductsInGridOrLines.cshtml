@@ -205,11 +205,11 @@
             </div>
         }
     }
-   @* Añadir aquí tratamiento si queremos mostrar el típico msje de No hay productos para esta categoría
+   @* Añadir aquí tratamiento si queremos mostrar el típico msje de No hay productos para esta categoría*@
     else
     {
-        
-    }*@    
+        @Html.Action("TopicBlock", "Topic", new { systemName = "SinProductosCategoria" })        
+    }    
     <div class="clear">
     </div>     
     <div class="pager">
