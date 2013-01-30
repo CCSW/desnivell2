@@ -103,8 +103,8 @@ namespace Nop.Web.Infrastructure
             // FIN CMAS
 
             routes.MapLocalizedRoute("ManufacturerList",
-                            "manufacturer/all/",
-                            new { controller = "Catalog", action = "ManufacturerAll" },
+                            "marcas/",
+                            new { controller = "Catalog", action = "ManufacturerTableImages" },
                             new[] { "Nop.Web.Controllers" });
             // CMAS -- FIX PARA SEO FRIENDLY. PENDIENTE DE MEJORARLO
             //routes.MapLocalizedRoute("Manufacturer",
