@@ -55,6 +55,7 @@ namespace Nop.Web.Infrastructure
                             "novedades/rss",
                             new { controller = "Catalog", action = "RecentlyAddedProductsRss" },
                             new[] { "Nop.Web.Controllers" });
+          
 
             routes.MapLocalizedRoute("ProductsWithDiscount",
                             "bicicletas-en-oferta/",
