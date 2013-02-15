@@ -114,8 +114,7 @@
         </div>
     }
     
-    @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "categorydetails_after_featured_products" })
-    
+    @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "categorydetails_after_featured_products" })    
     
     @*view mode*@
     @if (Model.PagingFilteringContext.AllowProductViewModeChanging && Model.Products.Count > 0)
@@ -124,8 +123,7 @@
             <span>@T("Categories.ViewMode")</span>
             @Html.DropDownList("products-viewmode", Model.PagingFilteringContext.AvailableViewModes, new { onchange = "setLocation(this.value);"})
         </div>
-    }   
-    
+    }       
     
     @*sorting*@
     @if (Model.PagingFilteringContext.AllowProductSorting && Model.Products.Count > 0)
@@ -207,10 +205,13 @@
             </div>
         }
     }
-    
+   @* Añadir aquí tratamiento si queremos mostrar el típico msje de No hay productos para esta categoría*@
+    else
+    {
+        @Html.Action("TopicBlock", "Topic", new { systemName = "SinProductosCategoria" })        
+    }    
     <div class="clear">
-    </div> 
-    
+    </div>     
     <div class="pager">
     @Html.Pager(Model.PagingFilteringContext).QueryParam("pagenumber")
     </div>

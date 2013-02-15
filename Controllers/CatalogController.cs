@@ -254,13 +254,35 @@ namespace Nop.Web.Controllers
                                 }
                                 else if (minimalPrice.HasValue)
                                 {
+                                    // CMAS -- CAMBIO 06-02-2013
+                                    // SI HAY PRECIO SPECIAL, QUE SE MUESTRE EL PRECIO "NORMAL" COMO "OLDPRICE"
                                     //calculate prices
                                     decimal taxRate = decimal.Zero;
-                                    decimal oldPriceBase = _taxService.GetProductPrice(productVariant, productVariant.OldPrice, out taxRate);
-                                    decimal finalPriceBase = _taxService.GetProductPrice(productVariant, minimalPrice.Value, out taxRate);
+                                    decimal oldPriceBase = decimal.Zero;
+                                    decimal finalPriceBase = decimal.Zero;
+                                    decimal oldPrice = decimal.Zero;
+                                    decimal finalPrice = decimal.Zero;
+                                    // Si hay Precio Epecial, tomamos como OldPrice el precio normal y como Preciofinal el Precio Especial
+                                    if (productVariant.SpecialPrice != null && productVariant.SpecialPrice > 0 && productVariant.SpecialPriceStartDateTimeUtc <= DateTime.Today
+                                        && productVariant.SpecialPriceEndDateTimeUtc >= DateTime.Today)
+                                    {
 
-                                    decimal oldPrice = _currencyService.ConvertFromPrimaryStoreCurrency(oldPriceBase, _workContext.WorkingCurrency);
-                                    decimal finalPrice = _currencyService.ConvertFromPrimaryStoreCurrency(finalPriceBase, _workContext.WorkingCurrency);
+                                         oldPriceBase = _taxService.GetProductPrice(productVariant, productVariant.Price, out taxRate);
+                                         finalPriceBase = _taxService.GetProductPrice(productVariant, minimalPrice.Value, out taxRate);
+
+                                         oldPrice = _currencyService.ConvertFromPrimaryStoreCurrency(oldPriceBase, _workContext.WorkingCurrency);
+                                         finalPrice = _currencyService.ConvertFromPrimaryStoreCurrency(finalPriceBase, _workContext.WorkingCurrency);
+                                    }
+                                    else
+                                    {
+                                         oldPriceBase = _taxService.GetProductPrice(productVariant, productVariant.OldPrice, out taxRate);
+                                         finalPriceBase = _taxService.GetProductPrice(productVariant, minimalPrice.Value, out taxRate);
+
+                                         oldPrice = _currencyService.ConvertFromPrimaryStoreCurrency(oldPriceBase, _workContext.WorkingCurrency);
+                                         finalPrice = _currencyService.ConvertFromPrimaryStoreCurrency(finalPriceBase, _workContext.WorkingCurrency);
+                                    }
+
+                                    // FIN CMAS
 
                                     //do we have tier prices configured?
                                             var tierPrices = new List<TierPrice>();

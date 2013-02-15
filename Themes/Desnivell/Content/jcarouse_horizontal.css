@@ -133,3 +133,15 @@
 {
     margin: 0px;
 }
+/*Nuevo cmas*/
+#marcasCarousel img, #marcasCarousel a, #marcasCarousel a img, #marcasCarousel {
+    height: 60px;    
+}
+#marcasCarousel .nivo-controlNav .nivo-control {
+  float: left;
+  width: 15px;
+}
+#marcasCarousel .nivo-controlNav {
+    top: 100%;
+}
+/*fin nuevo cmas*/

@@ -34,7 +34,7 @@
     $(document).ready(function () {
         var purchasedCarousel = $('#mycarouselAPurchased').jcarousel({
         // Core configuration goes here
-        //wrap: 'circular'
+            wrap: 'circular'
         });
 
 //        $('#mycarouselAPurchased-pagination').jcarouselPagination({
@@ -61,7 +61,7 @@
         <ul>
         @foreach (var item in Model)
         {
-            <li>
+            <li class="jcarousel">
                 <div class="item">
                     <div class="product-title">
                         <a href="@Url.RouteUrl("Product", new { productId = item.Id, SeName = item.SeName })" title="@item.DefaultPictureModel.Title">

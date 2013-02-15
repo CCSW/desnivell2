@@ -140,6 +140,11 @@
             </div>
         }
     }
+    @* Añadir aquí tratamiento si queremos mostrar el típico msje de No hay productos para esta categoría*@
+    else
+    {
+        @Html.Action("TopicBlock", "Topic", new { systemName = "SinProductosMarca" })        
+    } 
     
     <div class="clear">
     </div>  

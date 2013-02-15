@@ -5,7 +5,7 @@
     <div class="InfoBlock_foot_left">                            
         <ul>
             <li><strong>@T("Information")</strong></li>            
-            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "Contactar" })">@T("ContactUs")</a></li>
+            <li><a href="@Url.RouteUrl("Contactus")">@T("ContactUs")</a></li>
             <li><a href="@Url.RouteUrl("Topic", new { SystemName = "Quienes-somos" })">@T("AboutUs")</a></li>
             @if (Model.BlogEnabled)
             {
@@ -15,14 +15,12 @@
             {
                 <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
             }*@
-            @if (Model.RecentlyAddedProductsEnabled)
+            @*@if (Model.RecentlyAddedProductsEnabled)
             {
-                <li><a href="@Url.RouteUrl("RecentlyAddedProducts")">@T("Products.NewProducts")</a></li>
-            }
-            @*@if (Model.RecentlyViewedProductsEnabled)
-            {
-                <li><a href="@Url.RouteUrl("RecentlyViewedProducts")">@T("Products.RecentlyViewedProducts")</a></li>
+               <li><a href="@Url.RouteUrl("RecentlyAddedProducts")">@T("Products.NewProducts")</a></li>
+                
             }*@
+            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "avisolegal" })">@T("AvisoLegal")</a></li>
          </ul>
     </div>
     
@@ -38,8 +36,8 @@
                 <li><a href="@Url.RouteUrl("Sitemap")">@T("Sitemap")</a></li>
             }
             <li><a href="@Url.RouteUrl("Topic", new { SystemName = "envios" })">@T("ShippingReturns")</a></li>
-            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "privacyinfo" })">@T("PrivacyNotice")</a></li>
-            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "conditionsofUse" })">@T("ConditionsOfUse")</a></li>
+            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "privacidad" })">@T("PrivacyNotice")</a></li>
+            <li><a href="@Url.RouteUrl("Topic", new { SystemName = "condiciones" })">@T("ConditionsOfUse")</a></li>
         </ul>
     </div>      
     <div class="logos_pay">           
@@ -47,20 +45,24 @@
                 <li style="float:left"><strong>@T("Payments")</strong></li><br /><br />
                 <li><img src="../../Themes/Desnivell/Content/images/paypal.png" /></li>
                 <li><img src="../../Themes/Desnivell/Content/images/visa.png" /></li>
-                <li><img src="../../Themes/Desnivell/Content/images/mastercard.png" /></li>                
+                <li><img src="../../Themes/Desnivell/Content/images/mastercard.png" /></li>                                                
             </ul>
     </div>
+	<div id="thawteseal" style="text-align:center;" title="Click to Verify - This site chose Thawte SSL for secure e-commerce and confidential communications.">
+        <div><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.bicicletasdesnivell.com&amp;size=L&amp;lang=es"></script></div>
+        <div><a href="http://www.thawte.com/ssl-certificates/" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px arial,sans-serif; margin:0px; padding:0px;">Acerca de los certificados SSL</a></div>
+    </div>    
     <div class="followus_footer">
          <ul>
             <li><strong>@T("FollowUs")</strong></li><br /><br />
              <li>
-                <a href="http://wwww.bicicletasdesnivell.com"><img src="../../Content/Images/icons/icon-facebook.png" /></a>
+                <a href="http://www.bicicletasdesnivell.com"><img src="Content/Images/icons/icon-facebook.png" /></a>
              </li>
              <li>
-                <a href="http://wwww.bicicletasdesnivell.com""><img src="../../Content/Images/icons/icon-twitter.png" /></a>
+                <a href="http://www.bicicletasdesnivell.com""><img src="Content/Images/icons/icon-twitter.png" /></a>
              </li>
              <li>
-                <a href="http://wwww.bicicletasdesnivell.com""><img src="../../Content/Images/icons/icon-youtube.png" /></a>
+                <a href="http://www.bicicletasdesnivell.com""><img src="Content/Images/icons/icon-youtube.png" /></a>
              </li>  
          </ul>       
 </div>      

@@ -2,34 +2,29 @@
 
 @{   
     Layout = "~/Views/Shared/_ColumnsThree.cshtml";
+    //title
+    Html.AddTitleParts(T("PageTitle.Bestsellers").Text);
 }
-
-<h2>@T("Bestsellers")</h2>
+@using Nop.Core;
+@using Nop.Core.Infrastructure;
 @using Nop.Web.Framework.UI;
 @using Nop.Web.Models.Catalog;
-@if (Model.Products.Count > 0)
-{
-    <div class="product-grid bestsellers">
-        @*<div class="title">
-            @T("Bestsellers")
-        </div>*@
-        <div class="clear">
+<div class="recently-added-products">
+    <div class="page-title">
+        <div class="title">
+            <h1>@T("Bestsellers")</h1>
         </div>
-        @if (Model.UseSmallProductBox)
-        {
-            @(Html.DataList<ProductOverviewModel>(Model.Products, 2,
-            @<div class="item-box">
-                @Html.Partial("_ProductSmallBox", @item)
-            </div>
-                ))
-        }
-        else
-        {
+    </div>
+    <div class="clear">
+    </div>
+    @if (Model.Products.Count > 0)
+    {
+        <div class="product-grid">
         @(Html.DataList<ProductOverviewModel>(Model.Products, 2,
             @<div class="item-box">
                 @Html.Partial("_ProductBox", @item)
             </div>
                 ))
-        }
     </div>
 }
+</div>
